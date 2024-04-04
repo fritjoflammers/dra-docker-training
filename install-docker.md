@@ -4,7 +4,7 @@ In the course, we will be using Docker Desktop to work with containers on your l
 
 Docker Desktop is a tool that simplifies the process of building, running, and managing containers. It is available for Linux, macOS, and Windows operating systems.
 
-We will reserve time in the course to troubleshoot the installation process, if you encounter any issues. If you can, note down any errors or issues you face during the installation. 
+We will reserve time in the course to troubleshoot the installation process, if you encounter any issues. Please note down any errors or issues you face during the installation. 
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ We will reserve time in the course to troubleshoot the installation process, if 
    - Adminstrator / sudo privileges to install packages.
 
 * **macOS:** 
-   - macOS 12.7.4 Monterey or newer. Chipsets: Intel or Apple Silicon (M1 chip or newer)
+   - macOS 12.7.4 Monterey or newer (as of March 2024). Chipsets: Intel or Apple Silicon (M1 chip or newer). Note that Docker works only on the three most recent macOS versions.
    - Adminstrator rights to install applications.
 
 * **Windows:** 
