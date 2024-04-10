@@ -1,0 +1,15 @@
+# First steps with Docker
+
+Duration: 1.5 hours
+
+## Install Docker
+
+## The Docker Command Line Interface (CLI)
+
+## Run the `hello-world` container
+
+## Run a command inside a container
+
+## Cleaning up containers
+
+## Finding containers
