@@ -1,1 +1,56 @@
-# Stable Computing Environment
+# Stable Computing Environments
+
+Duration: 25 - 40 minutes
+
+::: {.callout-tip}
+## Learning objectives
+
+- Learn what a computing environment is.
+- Understand why stable computing environments are important for reproducible research.
+- Know about use cases for container
+- Get an overview of Docker and it's functionality
+
+:::
+
+## What is a computing environment?
+
+The computing environment is the set of software tools and libraries that are used to run a program. It includes the operating system, the programming language, and any other software that is required to run the program.
+
+Research software typically consists of multiple dependencies, such as libraries, compilers, and other software tools. 
+
+In addition, software tools and libraries are constantly updated, which can lead to compatibility issues. For example, a program that was written to run on a specific version of a library may not work on a newer version of the library. Also, functionality may change between versions, or bugs may have been fixed or newly introduced.
+
+For reproducibility it is thus important to record the computing environment in which the software was developed and tested. 
+
+Tools to record the computing environment include:
+
+ - conda
+ - Python venv
+ - R: renv, packrat
+
+
+However, recording the computing environment is not enough. It is also important to be able to recreate the computing environment, including underlying system libraries. 
+
+## Why are stable computing environments important for reproducible research?
+
+- **Reproducibility**: A stable computing environment ensures that the software will run the same way every time it is executed. This is important for reproducibility, as it allows others to run the software and obtain the same results.
+
+- **Portability**: A stable computing environment can be easily shared with others, allowing them to run the software on their own systems.
+
+- **Collaboration**: A stable computing environment allows multiple researchers to work on the same project without worrying about compatibility issues.
+
+- **Longevity**: A stable computing environment ensures that the software will continue to run in the future, even as software tools and libraries are updated.
+
+
+## Example
+
+Imagine your research project as your home. **When you install all software tools and libraries on your laptop, your kitchen, living room and bed are all in the same room**. Everything is unseparable, and possibly interdependent: If you blow a fuse in the kitchen, the power in the whole rooms goes out. 
+
+With **virtual environments, you can think of your research project as a house with separate rooms**. Each room has its own purpose and is independent of the others. If you blow a fuse in the kitchen, the power in the living and bedroom is still on.
+
+When you **containerize your software environments, each room is a shipping container**. Each part, can be shipped to another location, and still work as intended.
+
+![House example](./images/docker-house-example.png)
+
+
+- **Laptop** 
