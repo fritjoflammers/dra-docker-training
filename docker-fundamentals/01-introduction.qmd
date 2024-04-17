@@ -12,6 +12,58 @@ Duration: 25 - 40 minutes
 
 :::
 
+
+## Opening demo
+
+Create a Python script called `plot.py` with the following content:
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate some example data
+x = np.random.rand(100)  # Generate 100 random numbers between 0 and 1
+y = 2 * x + 1 + np.random.randn(100)  # Apply a linear relationship with noise
+
+# Create the scatter plot
+plt.figure(figsize=(8, 6))  # Set the figure size
+plt.scatter(x, y)  # Create the scatter plot
+
+# Add labels and title
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.title("Simulated Data")
+
+# Show the plot
+plt.grid(True)  # Add a grid for better readability
+plt.savefig("plot.png")
+```
+
+Try running the script by executing
+
+
+```bash
+python plot.py
+```
+
+Does it work? 
+
+Likely, you will get an error message that `matplotlib` is not installed. Possibly also Python is not installed on your system, showing error message like: `python: command not found`.
+
+When you have Docker installed, you can run the script in a Docker container with the following command:
+
+```bash
+docker run -v $(pwd):/app -w /app czentye/matplotlib-minimal python app.py
+```
+
+::: {.callout-note}
+This demonstration consists of a Python script requiring two dependencies: `numpy` and `matplotlib`. If any of these dependencies are missing, the script will not run.
+
+By running the script in a Docker container, the dependencies are provided and the script will run successfully and creates a file `plot.png` with a scatter plot.
+
+:::
+
+
 ## What is a computing environment?
 
 The computing environment is the set of software tools and libraries that are used to run a program. It includes the operating system, the programming language, and any other software that is required to run the program.
@@ -29,6 +81,14 @@ Tools to record the computing environment include:
  - R: renv, packrat
 
 
+::: {.callout-note}
+
+How are dependencies managed in Matlab?
+:::
+
+
+
+
 However, recording the computing environment is not enough. It is also important to be able to recreate the computing environment, including underlying system libraries. 
 
 ## Why are stable computing environments important for reproducible research?
@@ -42,15 +102,35 @@ However, recording the computing environment is not enough. It is also important
 - **Longevity**: A stable computing environment ensures that the software will continue to run in the future, even as software tools and libraries are updated.
 
 
-## Example
+::: {.callout-tip collapse="true"}
 
-Imagine your research project as your home. **When you install all software tools and libraries on your laptop, your kitchen, living room and bed are all in the same room**. Everything is unseparable, and possibly interdependent: If you blow a fuse in the kitchen, the power in the whole rooms goes out. 
+
+## The house analogy
+
+Imagine your research project as your home that provides functionality for cooking, sleeping, working/studying, etc. 
+
+**When you install all software tools and libraries on your laptop, your kitchen, living room and bed are all in the same room**. Everything is unseparable, and possibly interdependent: If you blow a fuse in the kitchen, the power in the whole rooms goes out. 
 
 With **virtual environments, you can think of your research project as a house with separate rooms**. Each room has its own purpose and is independent of the others. If you blow a fuse in the kitchen, the power in the living and bedroom is still on.
 
-When you **containerize your software environments, each room is a shipping container**. Each part, can be shipped to another location, and still work as intended.
+When you **containerize your software environments, each room is a shipping container**. Each part can be shipped to another location, and still work as intended.
 
 ![House example](./images/docker-house-example.png)
+:::
 
 
-- **Laptop** 
+## Use cases
+
+- **Cloud computing**: With the advent of cloud computing, containerization has become an important tool for deploying software in the cloud. Containers can be easily deployed on cloud platforms such as Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure without worrying about the underlying operating system and installed libraries on the host system. 
+
+- **Reproducibility**: Containers can be used to create reproducible computing environments that can be easily shared with others. This is important for reproducible research, as it allows others to run the software and obtain the same results. For example, the initative *BioContainers* provides a collection of bioinformatics tools in containers.
+
+ - **Scalability**: Containers can be easily scaled up to run on multiple machines, allowing for parallel processing of large datasets. This is important for high-performance computing applications, such as machine learning and data analysis.
+
+- **Development**: Containers can be used to create isolated development environments that are separate from the host system. This is useful for testing new software tools and libraries without affecting the host system.
+
+
+# Docker
+
+
+
