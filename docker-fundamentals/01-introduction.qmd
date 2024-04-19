@@ -111,7 +111,7 @@ Imagine your research project as your home that provides functionality for cooki
 
 **When you install all software tools and libraries on your laptop, your kitchen, living room and bed are all in the same room**. Everything is unseparable, and possibly interdependent: If you blow a fuse in the kitchen, the power in the whole rooms goes out. 
 
-With **virtual environments, you can think of your research project as a house with separate rooms**. Each room has its own purpose and is independent of the others. If you blow a fuse in the kitchen, the power in the living and bedroom is still on.
+With **virtual environments, you can think of your research project as a house with separate rooms**. Each room has its own purpose and is independent of the others. If you blow a fuse in the kitchen, the power in the living and bedroom is still on. However, if it rains through the roof, all rooms might be affected.
 
 When you **containerize your software environments, each room is a shipping container**. Each part can be shipped to another location, and still work as intended.
 
@@ -121,7 +121,7 @@ When you **containerize your software environments, each room is a shipping cont
 
 ## Use cases
 
-- **Cloud computing**: With the advent of cloud computing, containerization has become an important tool for deploying software in the cloud. Containers can be easily deployed on cloud platforms such as Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure without worrying about the underlying operating system and installed libraries on the host system. 
+- **Resolve Depdendencies and simplify Installation** - Containers can be used to package software and its dependencies into a single unit that can be easily installed and run on any system. This is useful for software that has complex dependencies or requires specific versions of libraries.
 
 - **Reproducibility**: Containers can be used to create reproducible computing environments that can be easily shared with others. This is important for reproducible research, as it allows others to run the software and obtain the same results. For example, the initative *BioContainers* provides a collection of bioinformatics tools in containers.
 
@@ -129,8 +129,21 @@ When you **containerize your software environments, each room is a shipping cont
 
 - **Development**: Containers can be used to create isolated development environments that are separate from the host system. This is useful for testing new software tools and libraries without affecting the host system.
 
+- **Cloud computing**: With the advent of cloud computing, containerization has become an important tool for deploying software in the cloud. Containers can be easily deployed on cloud platforms such as Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure without worrying about the underlying operating system and installed libraries on the host system. 
 
 # Docker
 
+Docker is one containerization tool that is widely used in the research community. Docker allows you to package software and its dependencies into a container that can be easily shared and run on any system.
 
+::: {.column-margin}
+![Docker concepts](./images/docker-concepts-vertical.png)
+:::
+
+Some important concepts in Docker are:
+
+- **Dockerfile**: A Dockerfile is a text file that contains instructions for building a Docker image. The Dockerfile specifies the base image, software tools, and libraries that are required to run the software. Think of the the Dockerfile as the *recipe* for building a container.
+
+- **Images**: An image is a read-only template that contains the software and its dependencies. Images are used to create containers. The image is the packaged version of a kitchen, with everything you need to follow the recipe. 
+
+- **Containers**: A container is a running instance of an image. Containers are isolated from each other and from the host system. The container is the operating kitchen that produces the meal.
 
