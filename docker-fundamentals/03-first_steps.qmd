@@ -14,6 +14,8 @@ Duration: 1.5 hours
 
 ## Install Docker
 
+See Installation Instructions. 
+
 ## The Docker Command Line Interface (CLI)
 
 Although Docker is now also provided with a graphical user interface, it is important to understand the command line interface (CLI) as it is the most powerful way to interact with Docker. Furthermote, if you work on a remote server such as a high performance computing cluster or a compute cloud, you will not have access to a graphical user interface.
@@ -155,8 +157,117 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Type `print("Hello World")` or some calculation like `1+1` to interact with the Python interpreter.
 
+Of course, you can also run any other (more advanced) Python code 🙂
+
 To exit the Python interpreter, type `exit()`. This will also exit the container.
 
-## Cleaning up containers
+
+## Managing images and containers
+
+### Containers
+
+To manage containers, you can use the `docker container ls` command. This command lists all running containers. If you want to see all containers, including stopped containers, you can add the `-a` (`--all`) option:
+
+```bash
+docker container ls -a
+```
+
+You see a output similar to this:
+
+```bash
+CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
+882a85072ff8   hello-world   "/hello"   11 minutes ago   Exited (0) 11 minutes ago             practical_jennings
+```
+
+This gives you an overview of all containers that are currently running or have been run on your computer. Take a moment to familarize yourself with the displayed information:
+
+- `CONTAINER ID` column shows the unique identifier of the container
+- `IMAGE` column shows the name of the image
+- `COMMAND` column shows the command that was run inside the container
+- `CREATED` column shows when the container was created
+- `STATUS` column shows the current status of the container
+- `PORTS` column shows the ports that are exposed by the container
+- `NAMES` column shows the name of the container
+
+
+
+### Images
+
+
+When you run a container, the underlying image is downloaded and stored on your computer. You can see all images that are stored on your computer with the following command:
+
+```bash
+docker image ls
+```
+
+You see a output similar to this:
+
+```bash
+REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+hello-world   latest    d2c94e258dcb   11 months ago   13.3kB
+```
+
+This gives you an overview of all images that are stored on your computer. Take a moment to familarize yourself with the displayed information:
+
+- `REPOSITORY` column shows the name of the image
+- `TAG` column shows the version of the image,
+- `IMAGE ID` column shows the unique identifier of the image
+- `CREATED` column shows when the image was created
+- `SIZE` column shows the size of the image.
+
+The `hello-world` image is very small. However some images can be considerable larger. Therfore, it makes sense to monitor the size of your images and remove images that you no longer need.
+
+
+::: {.callout-note}
+
+## Exercise: Remove images
+
+Remove the `hello-world` image from your computer. Type `docker image rm` command, followed by the image id to remove an image. After removing, run `docker image ls` to check if the image has been removed.
+:::
+
+
+::: {.callout-tip}
+
+## Layered file system
+
+Note that the image size does not necessarily translate to occupied disk space. Images that contain the same software components can share them and save disk space. The concept behind this is called *layered file system*. We will learn more about this later. 
+:::
 
 ## Finding containers
+
+For most applications, Docker images are available and can be downloaded. Databases that host Docker images are called *registries*. 
+Docker's offical registry is [Docker Hub](https://hub.docker.com/). The `docker run` command is integrated with Docker Hub. 
+For example, when we ran `docker run hello-world`, Docker automatically pulled the `hello-world` image from Docker Hub.
+
+
+When searching for public images, pay attention to the folllowing points: 
+
+- *Use the official images when possible*. They are maintained by the software developers and are usually well-documented. Regularly updated and popular containers are more likely to be secure and stable.
+- If the image is not offical, is it maintained by a well-established company or organisation? 
+- *Check if the image has a Dockerfile or Github repository associated it*. Only then, you can reproduce how the image was produced and that it is not introducing potentially malicious code.
+
+
+::: {.callout-note}
+
+## Exercise: Browse Docker Hub and run a container of yoru search
+
+Go to [Docker Hub](https://hub.docker.com/) and search for a container that you would like to run. Run the container on your computer.
+
+Not sure, where to start? How about a container for a programming language (e.g. R, Python, Matlab)?
+
+Want to go further? There's a way to look for for container with a `docker` command. Do you find it?
+
+:::
+
+
+
+::: {.callout-important}
+
+## Always specify the image's version
+
+Note that images can have different versions that is specified in via the *tag* (e.g. `python:3.12`). 
+When the tag is not specified, Docker will use the `latest` tag by default that refers to the most recent version of the image. 
+If the image is updated, the `latest` tag will point to the updated version.
+Therefore it is best practice to always specify the version of the image that you want to use.
+
+:::
