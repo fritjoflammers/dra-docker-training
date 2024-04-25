@@ -12,6 +12,7 @@ Duration: 40 min
 
 :::
 
+## Introduction
 
 Research projects typically require a lot of specific software that is not available in predefined Docker image. 
 In this session, we will create a first own Dockerfile to build a custom image.
@@ -23,7 +24,7 @@ Do you remember the Docker workflow?
 In order to build an image, we need to create a Dockerfile.
 
 
- ## What is a Dockerfile?
+## What is a Dockerfile?
 
 A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 
@@ -32,7 +33,7 @@ The Dockerfile a set of simple commands that describe how to build a Docker imag
 Let's have a look at this example for our own "Hello World" application:
 
 ```Dockerfile
-# Use an official Python runtime as a parent image
+# use the minimal linux alpine image
 FROM alpine:3.12
 
 ENTRYPOINT ["echo", "Hello World"]
@@ -42,13 +43,6 @@ This Dockerfile uses only two commands:
 
 - `FROM` specifies the base image to use.
 - `ENTRYPOINT` specifies the command to run when the container starts.
-
-::: {.callout-tip}
-
-Note how the command `echo "Hello World"` is specified as an list or array. This is the so called *exec* form of the `ENTRYPOINT` command. It is recommended because it explicitly states the command and its arguments.
-
-There is also a *shell* form of the `ENTRYPOINT` command, which is specified as a string. Docker translates this internally to the exec form by running the command as shell command. 
-:::
 
 
 To build an image from this Dockerfile, save it into a new directory and run the following command:
@@ -67,6 +61,13 @@ docker run my-hello-world
 
 Does the output says "Hello World"?
 
+::: {.callout-tip}
+
+Note how the command `echo "Hello World"` is specified as an list or array. This is the so called *exec* form of the `ENTRYPOINT` command. It is recommended because it explicitly states the command and its arguments.
+
+There is also a *shell* form of the `ENTRYPOINT` command, which is specified as a string. Docker translates this internally to the exec form by running the command as shell command. 
+:::
+
 
 ## Building a container for Python analysis
 
@@ -77,6 +78,7 @@ This image also builds upon the `alpine` image and then installs Python3 and the
 For the `ENTRYPOINT`, we will start the container with the Python script `plot.py` that reads the data from a CSV file. 
 
 ```Dockerfile
+# Dockerfile
 FROM alpine
 
 RUN apk add --update python3 py3-pip py3-matplotlib py3-numpy py3-pandas
@@ -91,12 +93,14 @@ Probably you will get an error message that the file `plot.py` is not found.
 python3: can't open file '//plot.py': [Errno 2] No such file or directory
 ```
 
-Why is that? Isn't the file in the same directory as the Dockerfile?
+*Why is that? Isn't the file in the same directory as the Dockerfile?*
 
 The problem is that the a Docker container does not have access to the host file system. Neither, did we include the file in the image.
+
 Let's do that now: 
 
 ```Dockerfile
+# Dockerfile
 FROM alpine
 
 RUN apk add --update python3 py3-pip py3-matplotlib py3-numpy py3-pandas
@@ -107,6 +111,8 @@ COPY annual-temp-anomalies.csv plot.py /app
 
 ENTRYPOINT ["python3", "plot.py"]
 ```
+
+
 
 Let's look at the two new commands: 
 
