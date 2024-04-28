@@ -1,5 +1,7 @@
 # Code clinic
 
+Here we can collect practical tips for working with Docker. 
+
 ## Practical tips
 
 ### Mounting volumes

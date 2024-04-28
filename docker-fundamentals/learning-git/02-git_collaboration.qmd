@@ -1,0 +1,83 @@
+## Collaborating with Git
+
+## The default git workflow
+
+
+
+
+You have learned about the standard git workflow in the previous chapter, where you work on your local repository, commit changes and push them to the remote repository.
+
+This is the default git workflow for a single developer. 
+
+![Single developer Git workflow. Alice develops a repository and is the only person, commiting and pushing her changes to a remote repository in the cloud. ](../images/git-collab-simple-1.png)
+
+However, when you work in a team, you need to collaborate with other developers. In this chapter, you will learn how to collaborate with other developers using git.
+
+::: {.callout-note}
+Remember that git is decentralized. 
+
+This means, each developer has a full copy of the repository on their local machine
+:::
+
+## The collaborative workflow
+
+Let's look what happens when you work on a project as a team. 
+
+Your team member clone the remote repository to their local machine. They work on their local repository and push their changes to the remote repository.
+
+Now what will happen, when you have done work in the same time and you both push your changes to the remote repository?
+
+![Collaborative git workflow. Divergent changes push by Bob to the remote repository, cause Alice's push to be rejected. To add her changes too, she has to pull changes from the remote repository, merge them and then push her changes.](../images/git-collab-simple-2.png)
+
+The first thing happening that you will get an error message when you try to push your changes to the remote repository. This is because the remote repository has been updated by your team member.
+
+
+When you work on the same file, you may have conflicts. You need to resolve these conflicts before you can push your changes to the remote repository.
+
+
+## Conflicts
+
+A conflict occurs when two developers change the same file and the same line in the file. 
+
+When you pull changes from the remote repository, git will try to merge the changes. If git can't merge the changes automatically, you will get a conflict.
+
+Git will notify about the conflict with a message similar to this:
+
+```txt
+Auto-merging file.txt
+CONFLICT (content): Merge conflict in file.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+When you open the file, you will see the conflict markers:
+
+```txt
+<<<<<<< HEAD
+This is the content of the file after the changes from the remote repository
+=======
+This is the content of the file after the changes from your local repository
+>>>>>>> 1234567890abcdef1234567890abcdef12345678
+```
+
+The conflict markers are:
+
+- `<<<<<<< HEAD` - The content of the file after the changes from the remote repository
+- `=======` - The separator
+- `>>>>>>> 1234567890abcdef1234567890abcdef12345678` - The content of the file after the changes from your local repository
+
+To resolve the conflict, edit the file, keeping the changes you want to keep and removing the conflict markers.
+
+After you have resolved the conflict, you need to add the file to the staging area and commit the changes.
+
+
+## Branches
+
+A way to avoid conflicts is to work on different branches.
+The default branch in git is called `main`. 
+
+Previously, it was often called master, however this term is being phased out because of its negative connotations.
+
+You can create a new branch with the `git branch` command.
+
+When working on a branch, you can push your changes to the remote repository without conflicts. When you are done with your work, you can merge the branch back to the main branch.
+

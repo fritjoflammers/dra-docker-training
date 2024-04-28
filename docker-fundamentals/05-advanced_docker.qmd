@@ -1,7 +1,10 @@
 # Advanced docker
 
-## Multi-container application (docker-compose)
+These are some additional topics that are not covered in the basic docker course.
 
+See following topics are placeholders. 
+
+## Multi-container application (docker-compose)
 
 ## Scaling
 

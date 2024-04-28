@@ -2,14 +2,14 @@
 
 Duration: 75 minutes
 
-::: {.callout-info}
+::: {.callout-tip}
 ## Learning objectives
 
 - Learn what is the Shell
 - Practice using the shell to… 
-- … navigate the file system
-- … start programs
-- … create, move and remove files
+  - … navigate the file system
+  - … start programs
+  - … create, move and remove files
 
 
 :::

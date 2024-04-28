@@ -1,0 +1,11 @@
+## GitLab for collaboration
+
+GitLab is a web-based Git repository manager with wiki and issue tracking features.
+
+It is a software that allows to host and manage remote repositories. 
+
+In addition, it provides a lot of features to manage the development process and facilitate collaboration between developers.
+
+
+
+
