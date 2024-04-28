@@ -1,0 +1,21 @@
+project:
+  type: book
+
+book:
+  title: "Working efficiently with the shell"
+  author: "Fritjof Lammers"
+  chapters:
+    - index.qmd
+    - 01-shell-basics.qmd
+    - 99-reference.qmd
+  sidebar:
+    logo: images/DRA_LogoNoText.png
+
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreport
+  epub:
+    cover-image: images/DRA_LogoNoText.png

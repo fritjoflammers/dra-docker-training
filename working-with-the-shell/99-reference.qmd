@@ -1,0 +1,15 @@
+## Command reference
+
+- `pwd`: Print working directory
+- `mkdir`: Make directory
+- `ls`: List directory contents
+- `cd`: Change directory
+- `echo`: Display a line of text
+- `less`: View file contents page by page
+- `nano`: Text editor
+- `>`: Redirect output (overwrite)
+- `>>`: Redirect output (append)
+- `cp`: Copy files or directories
+- `mv`: Move (rename) files or directories
+- `rm`: Remove files or directories
+
