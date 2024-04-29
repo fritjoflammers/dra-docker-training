@@ -252,9 +252,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#merging-branches" id="toc-merging-branches" class="nav-link active" data-scroll-target="#merging-branches"><span class="header-section-number">5.1</span> Merging branches</a></li>
-  <li><a href="#merge-requests" id="toc-merge-requests" class="nav-link" data-scroll-target="#merge-requests"><span class="header-section-number">5.2</span> Merge requests</a></li>
-  <li><a href="#issues" id="toc-issues" class="nav-link" data-scroll-target="#issues"><span class="header-section-number">5.3</span> Issues</a></li>
+  <li><a href="#merge-requests" id="toc-merge-requests" class="nav-link active" data-scroll-target="#merge-requests"><span class="header-section-number">5.1</span> Merge requests</a></li>
+  <li><a href="#issues" id="toc-issues" class="nav-link" data-scroll-target="#issues"><span class="header-section-number">5.2</span> Issues</a></li>
   </ul>
 </nav>
     </div>
@@ -283,17 +282,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>GitLab is a web-based Git repository manager with wiki and issue tracking features.</p>
 <p>It is a software that allows to host and manage remote repositories.</p>
 <p>In addition, it provides a lot of features to manage the development process and facilitate collaboration between developers.</p>
-<section id="merging-branches" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="merging-branches"><span class="header-section-number">5.1</span> Merging branches</h2>
-<p>When you have finished working on the new feature or bugfix, you can merge the branch back to the main or original branch.</p>
-<p>To merge the branch, you need to switch to the branch you want to merge the changes into and run the <code>git merge</code> command:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge new-feature</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>When you run <code>git log</code>, you will see that the commits from the new branch are now on the main branch.</p>
-<p>If the same line(s) of code have been changed in both branches, you will get a conflict. You need to resolve the conflict before you can commit the merge.</p>
-</section>
-<section id="merge-requests" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="merge-requests"><span class="header-section-number">5.2</span> Merge requests</h2>
+<section id="merge-requests" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="merge-requests"><span class="header-section-number">5.1</span> Merge requests</h2>
 <p>When you work in a team, you may want to review the changes before merging them into the main branch.</p>
 <p>It is a feature of GitLab to allow are structured comparison of code changes, and comment on them. Often a Merge Request becomes a long thread of comments and discussions about the changes, where multiple developers particpate.</p>
 <p>In software development, this is called a “code review” and an integral part of the development process ensuring a good code quality and functionality.</p>
@@ -305,7 +295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>When the code review is concluded, the Merge Request allows merging the changes into the main branch directly on the GitLab platform.</p>
 <p>To incorporate the changes in the main branch after merge on your local repository, you need to pull the changes from the remote repository:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -320,8 +310,8 @@ Merge Request vs Pull Request
 </div>
 </div>
 </section>
-<section id="issues" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="issues"><span class="header-section-number">5.3</span> Issues</h2>
+<section id="issues" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="issues"><span class="header-section-number">5.2</span> Issues</h2>
 <p>The second feature, that is provided by GitLab and GitHub to manage the development process are “Issues”.</p>
 <p>Issues are used to track bugs, feature requests, and other tasks.</p>
 <p>Similar to merge requests, they can be seen as discussion threads to guide the development process. Also, they can be used important project management to track changes or new ideas.</p>

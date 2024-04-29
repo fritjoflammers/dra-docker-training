@@ -256,6 +256,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#the-collaborative-workflow" id="toc-the-collaborative-workflow" class="nav-link" data-scroll-target="#the-collaborative-workflow"><span class="header-section-number">4.2</span> The collaborative workflow</a></li>
   <li><a href="#conflicts" id="toc-conflicts" class="nav-link" data-scroll-target="#conflicts"><span class="header-section-number">4.3</span> Conflicts</a></li>
   <li><a href="#branches" id="toc-branches" class="nav-link" data-scroll-target="#branches"><span class="header-section-number">4.4</span> Branches</a></li>
+  <li><a href="#merging-branches" id="toc-merging-branches" class="nav-link" data-scroll-target="#merging-branches"><span class="header-section-number">4.5</span> Merging branches</a></li>
   </ul>
 </nav>
     </div>
@@ -364,6 +365,15 @@ Note
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">--set-upstream</span> origin new-feature</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This tells the remote repository that the new branch is associated with the branch on your local repository.</p>
 <p>Web-based git services like GitHub and GitLab will show the new branch in the list of branches and provide a convienient way to browse the changes on the branch.</p>
+</section>
+<section id="merging-branches" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="merging-branches"><span class="header-section-number">4.5</span> Merging branches</h2>
+<p>When you have finished working on the new feature or bugfix, you can merge the branch back to the main or original branch.</p>
+<p>To merge the branch, you need to switch to the branch you want to merge the changes into and run the <code>git merge</code> command:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge new-feature</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>When you run <code>git log</code>, you will see that the commits from the new branch are now on the main branch.</p>
+<p>If the same line(s) of code have been changed in both branches, you will get a conflict. You need to resolve the conflict before you can commit the merge.</p>
 
 
 </section>
