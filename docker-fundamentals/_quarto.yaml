@@ -26,11 +26,11 @@ book:
   sidebar:
     logo: images/DRA_LogoNoText.png
 
+execute:
+  freeze: auto
 
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreport
   epub:
     cover-image: images/DRA_LogoNoText.png
