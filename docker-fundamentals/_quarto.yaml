@@ -1,0 +1,36 @@
+project:
+  type: book
+
+book:
+  title: "dra course - Docker Fundamentals"
+  author: "Fritjof Lammers"
+  date: "04/10/2024"
+  chapters:
+    - index.qmd
+    - part: "Working with the Shell"
+      chapters:
+        - working-with-the-shell/01-shell_basics.qmd
+        - working-with-the-shell/99-reference.qmd
+    - part: "Version Control with Git"
+      chapters:
+        - learning-git/02-git_collaboration.qmd
+        - learning-git/03-gitlab_collaboration.qmd
+    - part: "Docker Fundamentals"
+      chapters:
+        - 01-introduction.qmd
+        - 02-stable_computing_environments.qmd
+        - 03-first_steps.qmd
+        - 04-dockerfile.qmd
+        - 05-advanced_docker.qmd
+        - 06-code_clinic.qmd
+  sidebar:
+    logo: images/DRA_LogoNoText.png
+
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreport
+  epub:
+    cover-image: images/DRA_LogoNoText.png
