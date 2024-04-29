@@ -23,11 +23,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.64052329"
-     inkscape:cx="1125.6421"
-     inkscape:cy="809.49438"
-     inkscape:window-width="2498"
-     inkscape:window-height="1376"
+     inkscape:zoom="0.90583672"
+     inkscape:cx="303.58672"
+     inkscape:cy="229.06998"
+     inkscape:window-width="1858"
+     inkscape:window-height="1016"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -177,8 +177,8 @@
        y="70.091011"
        id="text2916"
        inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts-vertical.png"
-       inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600"><tspan
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
          id="tspan2914"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';stroke-width:0.115476"
@@ -190,8 +190,8 @@
        id="path4332"
        style="stroke-width:0.1;fill:#666666"
        inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts-vertical.png"
-       inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600" />
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        class="st0"
        d="m 186.91929,30.330667 30.87898,5.610169 c 0.22627,0.04196 0.419,0.188538 0.419,0.418976 v 20.467282 c 0,0.230439 -0.19273,0.381273 -0.419,0.418978 l -30.87898,5.643692 c -0.22624,0.04197 -0.41897,-0.188554 -0.41897,-0.418993 V 30.749644 c 0,-0.230439 0.19273,-0.460878 0.41897,-0.418977 z m -19.89327,2.807167 4.20239,-0.699693 v 28.319003 l -4.20239,-0.712266 c -0.15921,-0.0293 -0.28909,-0.129852 -0.28909,-0.28911 V 33.426943 c 0,-0.159226 0.12985,-0.259782 0.28909,-0.289109 z m 5.82806,-0.972033 4.79314,-0.80025 v 30.480936 l -4.79314,-0.808627 z m 6.42298,-1.068409 5.49287,-0.913378 c 0.15503,-0.02518 0.28909,0.129851 0.28909,0.289094 v 32.303527 c 0,0.159211 -0.12985,0.314241 -0.28909,0.289093 L 179.27706,62.1314 V 31.206325 Z m 37.4612,6.707905 v 17.618198 h -0.54468 V 37.805297 Z M 190.88287,34.29842 v 25.164057 h -1.62983 V 33.795642 Z m 4.46216,0.414797 v 24.08309 h -1.49576 V 34.520483 Z m 3.9929,0.645235 v 22.763293 h -1.35751 V 35.102867 Z m 3.56135,0.557237 v 21.715852 h -1.22342 V 35.630776 Z m 3.28481,0.527926 v 20.584591 h -1.08934 v -20.81085 z m 3.02925,0.381272 v 19.738245 h -0.95109 V 36.607006 Z m 2.715,0.494401 v 18.820671 h -0.81702 V 37.063703 Z m 2.53064,0.427354 v 18.003667 h -0.67873 V 37.432402 Z"
@@ -217,7 +217,7 @@
        inkscape:export-ydpi="600"><tspan
          x="312.68555"
          y="431.49023"
-         id="tspan26583">build</tspan></text>
+         id="tspan26889">build</tspan></text>
     <g
        style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;fill:#666666"
        id="g7442"
@@ -248,7 +248,7 @@
        inkscape:export-ydpi="600"><tspan
          x="312.68555"
          y="431.49023"
-         id="tspan26585">run</tspan></text>
+         id="tspan26891">run</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.61903px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.115476"
@@ -294,8 +294,8 @@
        id="g26443"
        transform="matrix(0.06490613,0,0,0.06490613,14.693557,89.296524)"
        inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts-vertical.png"
-       inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600">
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <path
          fill-rule="nonzero"
          d="M 248.22,301.3 76.33,211.14 31.96,263.75 c 62.12,32.84 119.75,63.86 181.9,96.71 z m 134.37,-243.57 0.62,124.11 c 0.03,6.48 -4.05,12.05 -9.86,14.39 l 0.01,0.03 -107.84,47.9 c -4.12,1.64 -11.68,1.89 -15.7,0.2 l -99.4,-46.08 0.01,-0.03 c -5.74,-2.41 -9.78,-8.14 -9.75,-14.82 L 141.27,60.9 c -0.45,-7.57 2.66,-14.93 10.11,-17.93 L 255.11,1.19 c 4.23,-1.7 8.77,-1.51 12.63,0.15 L 371.3,38.79 c 6.2,2.24 10.12,7.81 10.4,13.84 0.59,1.64 0.89,3.37 0.89,5.1 z M 247.16,220.38 V 103.91 l -91.14,-35.9 -1.75,112.62 z M 268.73,103.93 V 220.28 L 367.43,179.36 366.87,66 Z M 113.48,185.09 88,197.72 l 171.34,90.04 171.67,-90.21 -20.6,-10.71 -0.09,-19.64 25.86,13.35 48.4,-45.88 -74.63,-40.37 -0.1,-20.78 98.65,52.15 c 0.58,0.31 1.12,0.71 1.61,1.21 2.55,2.59 2.51,6.75 -0.07,9.3 l -59.01,57.94 57.14,68.39 c 2.32,2.78 1.95,6.94 -0.82,9.27 -0.43,0.35 -0.88,0.65 -1.35,0.87 l -51.29,27.12 v 101.66 c 0,2.73 -1.69,5.09 -4.07,6.08 l -185.46,94.14 c -4.38,2.07 -6.05,1.61 -10.76,-1.46 L 68.62,407.3 a 6.557,6.557 0 0 1 -3.63,-5.87 L 64.95,300.27 12.7,272.65 c -0.47,-0.22 -0.91,-0.52 -1.34,-0.87 -2.78,-2.33 -3.15,-6.49 -0.82,-9.27 L 66.2,195.91 1.62,134.71 c -2.39,-2.72 -2.1,-6.87 0.63,-9.27 0.4,-0.34 0.82,-0.64 1.25,-0.87 l 110.57,-62.55 -0.1,21.14 -88.63,50.42 52.64,48.94 35.6,-17.63 z m 329.87,26.72 -171.58,89.98 33.42,59.3 180.52,-97.93 z"
@@ -309,8 +309,8 @@
        y="128.98082"
        id="text26447"
        inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts-vertical.png"
-       inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600"><tspan
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
          id="tspan26445"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';stroke-width:0.115476"
@@ -321,30 +321,30 @@
        d="M 30.45834,73.518892 V 85.181078"
        id="path26463"
        inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts-vertical.png"
-       inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600" />
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.13451698,0,0,0.13451698,-9.4006305,22.834488)"
        id="text26467"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect26469);fill:#000000;fill-opacity:1;stroke:none"
        inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts-vertical.png"
-       inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600"><tspan
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="312.68555"
          y="431.49023"
-         id="tspan26587">build</tspan></text>
+         id="tspan26893">build</tspan></text>
     <g
        id="g26501"
        transform="translate(0,5.5200202)"
        inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts-vertical.png"
-       inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600">
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <path
          class="st0"
-         d="m 25.97748,146.82519 28.603433,5.19674 c 0.209596,0.0389 0.388123,0.17465 0.388123,0.38811 v 18.95899 c 0,0.21346 -0.178527,0.35318 -0.388123,0.38811 l -28.603433,5.22779 c -0.209568,0.0389 -0.388095,-0.17465 -0.388095,-0.38811 v -29.38353 c 0,-0.21345 0.178527,-0.42691 0.388095,-0.3881 z m -18.4272868,2.6003 3.8927058,-0.64812 v 26.2321 l -3.8927058,-0.65978 c -0.1474775,-0.0271 -0.2677863,-0.12028 -0.2677863,-0.26781 V 149.6933 c 0,-0.1475 0.120281,-0.24064 0.2677863,-0.26781 z m 5.3985758,-0.9004 4.439922,-0.74127 v 28.23471 l -4.439922,-0.74903 z m 5.949655,-0.98967 5.088088,-0.84607 c 0.143605,-0.0233 0.267786,0.12028 0.267786,0.26778 v 29.92301 c 0,0.14748 -0.120281,0.29108 -0.267786,0.26778 l -5.088088,-0.86546 v -28.64614 z m 34.700594,6.21358 v 16.31987 H 53.094477 V 153.749 Z m -23.950044,-3.24844 v 23.30965 H 28.13925 v -23.77538 z m 4.133333,0.38422 v 22.30835 h -1.385534 v -22.48688 z m 3.698653,0.59769 v 21.08581 h -1.257472 v -21.32256 z m 3.298906,0.51618 v 20.11555 h -1.133263 v -20.37948 z m 3.042744,0.48901 v 19.06766 h -1.009064 v -19.27724 z m 2.806017,0.35318 v 18.28369 h -0.881001 v -18.48552 z m 2.514925,0.45796 v 17.43374 h -0.756811 v -17.67048 z m 2.344151,0.39587 v 16.67693 h -0.628712 v -16.96801 z"
+         d="m 26.316495,147.8558 20.175537,3.66554 c 0.147839,0.0274 0.273764,0.12319 0.273764,0.27375 v 13.37279 c 0,0.15057 -0.125925,0.24912 -0.273764,0.27376 l -20.175537,3.68744 c -0.14782,0.0274 -0.273744,-0.12319 -0.273744,-0.27375 v -20.72579 c 0,-0.15055 0.125924,-0.30112 0.273744,-0.27374 z m -12.997755,1.83413 2.745734,-0.45716 v 18.50291 L 13.31874,167.2703 c -0.104023,-0.0191 -0.188884,-0.0848 -0.188884,-0.1889 v -17.20257 c 0,-0.10404 0.08484,-0.16974 0.188884,-0.1889 z m 3.807905,-0.6351 3.131716,-0.52286 v 19.91546 l -3.131716,-0.52833 z m 4.196611,-0.69807 3.588902,-0.59678 c 0.101292,-0.0164 0.188884,0.0848 0.188884,0.18888 v 21.10631 c 0,0.10402 -0.08484,0.20531 -0.188884,0.18888 l -3.588902,-0.61046 v -20.20566 z m 24.476193,4.38277 v 11.51128 h -0.35588 v -11.51128 z m -16.893252,-2.2913 v 16.44155 h -1.06489 v -16.77005 z m 2.915461,0.27101 v 15.73528 h -0.977291 v -15.8612 z m 2.608859,0.42159 v 14.87295 h -0.886963 v -15.03995 z m 2.326895,0.36409 v 14.18857 h -0.799351 v -14.37474 z m 2.146211,0.34492 v 13.44944 h -0.711747 v -13.59727 z m 1.979235,0.24912 v 12.89647 H 40.26144 V 151.9566 Z m 1.773911,0.32302 v 12.29695 H 42.12295 V 152.255 Z m 1.653456,0.27923 v 11.76313 H 43.86676 V 152.4959 Z"
          id="path26455"
-         style="fill:#666666;stroke-width:0.388106"
+         style="fill:#666666;stroke-width:0.273752"
          inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts.png"
          inkscape:export-xdpi="600"
          inkscape:export-ydpi="600" />
@@ -352,7 +352,7 @@
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:4.27864px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.106966"
          x="22.099689"
-         y="183.65552"
+         y="175.71812"
          id="text26459"
          inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts.png"
          inkscape:export-xdpi="600"
@@ -361,10 +361,10 @@
            id="tspan26457"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';stroke-width:0.106966"
            x="22.099689"
-           y="183.65552">Container</tspan></text>
+           y="175.71812">Container</tspan></text>
       <path
          class="st0"
-         d="m 18.14806,179.27695 c 1.54032,0 2.789195,1.24888 2.789195,2.7892 0,1.54033 -1.248875,2.7892 -2.789195,2.7892 -1.540329,0 -2.789205,-1.24887 -2.789205,-2.7892 0,-1.54032 1.248876,-2.7892 2.789205,-2.7892 z m 1.065466,2.97443 c 0.154805,-0.0999 0.154805,-0.21155 0,-0.30008 l -1.601613,-0.92066 c -0.1262,-0.0795 -0.25831,-0.0327 -0.254679,0.13257 l 0.0046,1.86038 c 0.01093,0.17886 0.113038,0.22789 0.263303,0.14481 z"
+         d="m 18.14806,171.3394 c 1.54032,0 2.789195,1.24888 2.789195,2.7892 0,1.54033 -1.248875,2.7892 -2.789195,2.7892 -1.540329,0 -2.789205,-1.24887 -2.789205,-2.7892 0,-1.54032 1.248876,-2.7892 2.789205,-2.7892 z m 1.065466,2.97443 c 0.154805,-0.0999 0.154805,-0.21155 0,-0.30008 l -1.601613,-0.92066 c -0.1262,-0.0795 -0.25831,-0.0327 -0.254679,0.13257 l 0.0046,1.86038 c 0.01093,0.17886 0.113038,0.22789 0.263303,0.14481 z"
          id="path26461"
          style="fill:#00aa44;stroke-width:0.045397"
          inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts.png"
@@ -377,18 +377,28 @@
        id="text26473"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect26475);fill:#000000;fill-opacity:1;stroke:none"
        inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts-vertical.png"
-       inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600"><tspan
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="312.68555"
          y="431.49023"
-         id="tspan26589">run</tspan></text>
+         id="tspan26895">run</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7536)"
        d="m 30.606788,135.43639 v 11.66218"
        id="path26477"
        inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts-vertical.png"
-       inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600" />
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:0.60499;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect26642"
+       width="58.728928"
+       height="8.0951519"
+       x="-0.34457162"
+       y="182.4313"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/docker-concepts-vertical.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
   </g>
   <style
      type="text/css"

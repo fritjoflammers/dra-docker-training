@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="shell-terminal-console.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.90583672"
+     inkscape:cx="211.95873"
+     inkscape:cy="435.50895"
+     inkscape:window-width="1488"
+     inkscape:window-height="928"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="117.17714"
+       y="574.22531"
+       width="346.09153"
+       height="237.36086"
+       id="rect1303" />
+    <rect
+       x="117.17714"
+       y="574.22531"
+       width="346.09153"
+       height="237.36086"
+       id="rect8704" />
+    <rect
+       x="117.17714"
+       y="574.22531"
+       width="346.09153"
+       height="237.36086"
+       id="rect10772" />
+    <rect
+       x="117.17714"
+       y="574.22531"
+       width="346.09153"
+       height="237.36086"
+       id="rect10778" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path8572"
+       style="fill:none;stroke:#000000;stroke-width:0.541836;stroke-linecap:round;stroke-linejoin:round"
+       d="m 7.7335261,120.65812 c 39.6103999,0 79.2208029,0 118.8312039,0 0,-25.318502 1e-5,-50.636999 0,-75.955496 -39.610401,0 -79.220804,0 -118.8312039,0 0,25.318497 0,50.636994 0,75.955496 z"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/console-terminal-shell.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       id="path8454"
+       style="fill:#cccccc;stroke-width:0.541837;stroke-linecap:round;stroke-linejoin:round"
+       d="m 15.591842,118.88928 c 36.501018,0 73.002038,0 109.503048,0 0,-21.979927 2e-5,-43.959855 0,-65.939779 -36.50101,0 -73.00203,0 -109.503048,0 0,21.979924 0,43.959852 0,65.939779 z"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/console-terminal-shell.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       id="rect867"
+       style="fill:#4d4d4d;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round"
+       d="m 25.002751,117.08982 c 32.880444,0 65.760889,0 98.641329,0 0,-18.73053 1e-5,-37.461052 0,-56.191574 -32.88044,0 -65.760885,0 -98.641329,0 0,18.730522 0,37.461044 0,56.191574 z"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/console-terminal-shell.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-4.1231416,-89.432556)"
+       id="text1301"
+       style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1303);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/console-terminal-shell.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         x="117.17773"
+         y="590.74026"
+         id="tspan11413"><tspan
+           style="fill:#ffffff"
+           id="tspan11411">Shell</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-13.794622,-97.630742)"
+       id="text8702"
+       style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8704);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/console-terminal-shell.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         x="117.17773"
+         y="590.74026"
+         id="tspan11417"><tspan
+           style="fill:#666666"
+           id="tspan11415">Terminal</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-21.968157,-106.11005)"
+       id="text10776"
+       style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect10778);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/console-terminal-shell.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         x="117.17773"
+         y="590.74026"
+         id="tspan11421"><tspan
+           style="fill:#666666"
+           id="tspan11419">Console</tspan></tspan></text>
+  </g>
+</svg>
