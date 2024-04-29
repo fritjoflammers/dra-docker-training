@@ -14,3 +14,4 @@ All new material is licensed under [CC-BY-SA](https://creativecommons.org/licens
 
 ## Contact
 
+In case of questions, or suggestions, please open a [GitHub issue](https://github.com/mobilegenome/docker-training/issues/new/choose). Thanks!
