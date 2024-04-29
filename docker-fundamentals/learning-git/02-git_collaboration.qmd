@@ -73,11 +73,36 @@ After you have resolved the conflict, you need to add the file to the staging ar
 ## Branches
 
 A way to avoid conflicts is to work on different branches.
-The default branch in git is called `main`. 
 
-Previously, it was often called master, however this term is being phased out because of its negative connotations.
+Branches allow multiple "development stream" in parallel. This is useful when you work on a new feature or a bugfix, experiment with new ideas 
+or work with other developers on the same project.
 
-You can create a new branch with the `git branch` command.
+A typical workflow is to create a new branch for a new feature or a bugfix, you want to adress. 
 
-When working on a branch, you can push your changes to the remote repository without conflicts. When you are done with your work, you can merge the branch back to the main branch.
+To create a new branch and switch to it, you can use the `git checkout -b` command:
+
+```bash
+git checkout -b new-feature
+```
+
+Now, git branches off the previous selected (checked-out) branch.
+
+You can check on what branch you are by running `git branch` or `git status`. 
+
+
+![Creating a new branch allows making changes/commits independent from the main branch. ](../images/git-branches-simple.png)
+
+All commits you make now will be on the new branch and other branches unaffected. 
+
+When you push the new branch to the remote repository, you first need to set the upstream branch by running:
+
+```bash
+git push --set-upstream origin new-feature
+```
+
+This tells the remote repository that the new branch is associated with the branch on your local repository.
+
+Web-based git services like GitHub and GitLab will show the new branch in the list of branches and provide a
+convienient way to browse the changes on the branch.
+
 
