@@ -161,14 +161,14 @@ Your public key has been saved in /Users/heidi/.ssh/helmholtz_gitlab_ed25519.pub
   1. Click your round profile avatar 
   2. Click _Edit profile_
   3. In the left sidebar click _SSH Keys_
-  4. Klick _Add new key_ and aste the key you copied into the _Key_ box. Make sure it starts with `ssh-ed25519` and ends with your email address. Otherwise you may have missed something while copying.
+  4. Klick _Add new key_ and paste the key you copied into the _Key_ box. Make sure it starts with `ssh-ed25519` and ends with your email address. Otherwise you may have missed something while copying.
   5. In the _Title_ box enter a name to distinguish the key (in case there are multiple) e.g. `Macbook`
   6. Click _Add key_
 
 To automatically use a given key for pushing to/pulling from GitLab create/edit the file `~/.ssh/config` (that means the file called `config` in the `.ssh` folder) and modify the following example:
 ```
 # Configuration for Helmholtz Gitlab
-Host gitlab.hzdr.de
+Host codebase.helmholtz.cloud
   PreferredAuthentications publickey
   IdentityFile ~/.ssh/helmholtz_gitlab_ed25519
 ```
@@ -176,7 +176,7 @@ Host gitlab.hzdr.de
 
 Test if it all worked by typing:
 ``` bash
-ssh -T git@gitlab.hzdr.de
+ssh -T git@codebase.helmholtz.cloud
 ```
 in the `Terminal`. If you are asked if you want to continue, type `yes`. 
 In the end it should say something like `Welcome to GitLab, @HeidiSeibold!`. 
