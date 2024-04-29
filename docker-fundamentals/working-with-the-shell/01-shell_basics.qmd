@@ -53,12 +53,28 @@ drwxr-xr-x 2 user user 4096 Mar  1 10:00 my-directory
 -rw-r--r-- 1 user user  123 Mar  1 10:00 my-file.txt
 ```
 
-The first column indicates the type of the file or directory and the permissions.
-In the second column, you can see the number of links to the file or directory.
-The third and fourth columns show the owner and group of the file or directory.
-The fifth column shows the size of the file or directory.
-The sixth column shows the date and time the file or directory was last modified.
-The last column shows the name of the file or directory.
+The columns in the output are as follows:
+
+1. `drwxr-xr-x` indicates the type of the file or directory and the permissions.
+2. `1`number of links to the file or directory.
+3. `user` owner of the file or directory.
+4. `user` group of the file or directory.
+5. `4096` size of the file or directory (in bytes)
+6. `Mar 1 10:00` date and time the file or directory was last modified.
+7. `my-directory` name of the file or directory.
+
+
+::: {.callout-tip}
+
+## Hidden files
+
+Files that start with a `.` are hidden files. You can display them using the `-a` option.
+
+```bash
+ls -a
+```
+:::
+
 
 ## mkdir
 
@@ -112,7 +128,9 @@ cd /path/to/my-directory
 :::
 
 
-### Exercise
+::: {.callout-note}
+
+## Exercise
 
 Create the following (or similar) directory structure. 
 
@@ -126,6 +144,9 @@ my-research-project/
     results/
     doc/
 ```
+
+:::
+
 
 ## Understanding paths
 
@@ -150,7 +171,7 @@ To navigate to the home directory you can use the `cd` command without any argum
 
 :::
 
-## Some more commands
+## Writing and viewing files
 
 ### echo
 
@@ -229,10 +250,15 @@ Options are usually preceded by a `-` or `--`. They can be combined, e.g. `-a -b
 
 :::
 
+::: {.callout-note}
+
 ## Exercise
 
 Use the commands you have learned to create a README file in your research directory. 
 Try various commands to create the file, modify it, and view its contents.
+
+:::
+
 
 ## Moving and removing files
 
