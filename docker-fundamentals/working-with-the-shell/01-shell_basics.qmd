@@ -1,0 +1,350 @@
+# Shell basics
+
+Duration: 75 minutes
+
+::: {.callout-tip}
+## Learning objectives
+
+- Learn what is the Shell
+- Practice using the shell to… 
+  - … navigate the file system
+  - … start programs
+  - … create, move and remove files
+
+
+:::
+
+
+## What is the Shell?
+
+This session consists of some slides that are available here. 
+
+
+## Navigating the file system
+
+Follow along with the instructor as they demonstrate how to navigate the file system using the shell.
+
+### pwd
+
+The `pwd` command is used to print the current working directory.
+
+```bash
+pwd
+```
+
+### ls
+
+The `ls` command is used to *list* the contents of a directory.
+
+```bash
+ls
+```
+
+You can also use the `-l` option to display more information about the files.
+
+```bash
+ls -l
+```
+
+The output of `ls -l` looks like this:
+
+```bash
+drwxr-xr-x 2 user user 4096 Mar  1 10:00 my-directory
+-rw-r--r-- 1 user user  123 Mar  1 10:00 my-file.txt
+```
+
+The columns in the output are as follows:
+
+1. `drwxr-xr-x` indicates the type of the file or directory and the permissions.
+2. `1`number of links to the file or directory.
+3. `user` owner of the file or directory.
+4. `user` group of the file or directory.
+5. `4096` size of the file or directory (in bytes)
+6. `Mar 1 10:00` date and time the file or directory was last modified.
+7. `my-directory` name of the file or directory.
+
+
+::: {.callout-tip}
+
+## Hidden files
+
+Files that start with a `.` are hidden files. You can display them using the `-a` option.
+
+```bash
+ls -a
+```
+:::
+
+
+## mkdir
+
+The `mkdir` command is used to create directories.
+
+```bash
+mkdir my-new-directory
+```
+
+You can also create multiple directories at once.
+
+```bash
+mkdir my-new-directory my-other-directory
+```
+
+::: {.callout-tip}
+
+## Creating nested directories
+
+You can create nested directories by using the `-p` option.
+The `-p` option will create all parent directories if they do not exist.
+
+```bash
+mkdir -p my-new-directory/nested-directory
+```
+
+:::
+
+## cd
+
+The `cd` command is used to **c**hange **d**irectories. 
+
+```bash
+cd my-directory
+```
+
+You can also use `cd` with a path to navigate to a directory that is not in the current working directory.
+
+```bash
+cd /path/to/my-directory
+```
+
+
+::: {.callout-tip}
+
+## Understanding ".." and "."
+
+- `..` refers to the parent directory
+- `.` refers to the current directory
+
+:::
+
+
+::: {.callout-note}
+
+## Exercise
+
+Create the following (or similar) directory structure. 
+
+
+```bash
+my-research-project/
+    data/
+        raw/
+        clean/
+    analysis/
+    results/
+    doc/
+```
+
+:::
+
+
+## Understanding paths
+
+Paths are used to specify the location of a file or directory in the file system. 
+
+They can be either absolute or relative. 
+Absolute paths can be seen as the full address of a file or directory, whereas relative paths are relative to the current working directory. They can be seen as asking a local in the neighborhood for directions.
+
+In Linux absolute paths look like this: `/home/username/my-research-project/data/raw`
+
+Under MacOS they look like this: `/Users/username/my-research-project/data/raw`
+
+And in Windows: `C:\Users\username\my-research-project\data\raw`
+
+::: {.callout-tip}
+
+## The "Home" directory
+
+The home directory is the directory where you land when you open a terminal. It is usually `/home/username` in Linux, `/Users/username` in MacOS and `C:\Users\username` in Windows.
+
+To navigate to the home directory you can use the `cd` command without any arguments.
+
+:::
+
+## Writing and viewing files
+
+### echo
+
+The `echo` command is used to print text to the terminal.
+When writing scripts, it is often used to print messages to the user.
+
+```bash
+echo "Hello, world!"
+```
+
+### nano
+
+`nano` is a simple text editor that is often used in the shell.
+
+To open a file in `nano`:
+```bash
+nano my-file.txt
+```
+
+You can also create a new file by providing a name that does not exist.
+
+To save and exit `nano`:
+- Press `Ctrl` + `O` to save
+- Press `Enter` to confirm the file name
+
+When you start `nano` without providing a file name, you can specify the filename when you save the file (`Ctrl` + `O`).
+
+- Press `Ctrl` + `X` to exit without saving. 
+
+::: {.callout-tip}
+
+## Using nano 
+
+nano's commands are displayed at the bottom of the screen.
+They can be invoked by pressing `Ctrl` and the corresponding letter.
+::::
+
+### less
+
+`less` is a program that allows you to view the contents of a file.
+
+```bash
+less my-file.txt
+```
+Navigate through the file using the arrow keys, or Page Up and Page Down.
+
+To exit `less`, press `q`.
+
+### > and >>
+
+The `>` and `>>` operators are used to redirect the output of a command to a file.
+
+- `>` will overwrite the file if it already exists
+- `>>` will append the output to the file
+
+```bash
+echo "Hello, world!" > my-file.txt
+echo "Hello, again!" >> my-file.txt
+```
+
+## General syntax of a shell command
+
+```bash
+command -option argument
+```
+
+- `command` is the name of the command
+- `-option` is an option that modifies the behavior of the command
+- `argument` is the input to the command
+
+::: {.callout-tip}
+
+## Command options
+
+Options are usually preceded by a `-` or `--`. They can be combined, e.g. `-a -b -c` can be written as `-abc`.
+
+:::
+
+::: {.callout-note}
+
+## Exercise
+
+Use the commands you have learned to create a README file in your research directory. 
+Try various commands to create the file, modify it, and view its contents.
+
+:::
+
+
+## Moving and removing files
+
+### mv
+
+The `mv` command is used to move files and directories.
+
+```bash
+
+mv my-file.txt my-research-project/doc/
+```
+
+It can also be used to rename files.
+
+```bash
+mv my-file.txt my-new-file.txt
+```
+
+### cp
+
+The `cp` command is used to copy files and directories.
+
+```bash
+cp my-file.txt my-file-copy.txt
+```
+
+To copy a directory, you need to use the `-r` option.
+
+```bash
+cp -r my-research-project my-research-project-copy
+```
+
+### rm
+
+::: {.callout-warning}
+
+## Be careful with `rm`
+
+The `rm` command will permanently delete files and directories. There is no way to recover them.
+
+When you are unsure about using rm, you can use the `-i` option to prompt you before deleting each file.
+:::
+
+
+The `rm` command is used to remove files and directories.
+
+```bash
+rm my-file.txt
+```
+
+To remove a directory, you need to use the `-r` option.
+
+```bash
+rm -r test/
+```
+
+## Getting Help
+
+The `man` command is used to display the manual page of a command.
+
+Often, you can also use the `--help` option to get a brief overview of the command and its options.
+
+For example
+
+```bash
+cp --help
+```
+
+## Summary
+
+- The shell is a powerful tool for interacting with the file system and running programs.
+- You can navigate the file system using commands like `cd`, `ls`, and `pwd`.
+- You can create, move, and remove files using commands like `touch`, `mv`, `cp`, and `rm`.
+- You can view the contents of files using commands like `cat`, `less`, and `nano`.
+- You can redirect the output of commands to files using `>` and `>>`.
+- You can get help on commands using the `man` command or the `--help` option.
+
+## Further reading
+
+- [Ubuntu Command Line Tutorial](https://ubuntu.com/tutorials/command-line-for-beginners)
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,273 @@
+# First steps with Docker
+
+Duration: 1.5 hours
+
+::: {.callout-tip}
+## Learning objectives
+
+- Be able check if Docker is installed on your machine
+- Run and interact Docker containers
+- Understand some important Docker commands and how to get help with the Docker CLI (Command Line Interface) 
+- Finding new containers on Docker Hub
+:::
+
+
+## Install Docker
+
+See Installation Instructions. 
+
+## The Docker Command Line Interface (CLI)
+
+Although Docker is now also provided with a graphical user interface, it is important to understand the command line interface (CLI) as it is the most powerful way to interact with Docker. Furthermote, if you work on a remote server such as a high performance computing cluster or a compute cloud, you will not have access to a graphical user interface.
+
+Run your first Docker command. It should show you the version of Docker that is installed on your machine.
+
+```bash
+docker --version
+```
+
+To check that Docker is able to run containers, you can run the following command:
+
+```bash
+docker container ls
+```
+
+This command lists a summary of all running containers. If you have not run any containers yet, the output will be a empty table.
+
+::: {.callout-warning collapse="true"}
+
+## Do you get an error message?
+
+If you get an error message similar to the following, the underlying *Docker engine* is not running:
+
+```bash
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+```
+:::
+
+
+## Run the `hello-world` container
+
+Now run your first container:
+
+```bash
+docker run hello-world
+```
+
+Do you get an output similar to the following? 
+
+If so, congratulations! 🎉 
+You have successfully run your first container.
+
+```bash
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+```
+
+Let's break down what happened when you ran the `hello-world` container:
+
+1. The Docker client contacted the Docker daemon.
+2. The Docker daemon pulled the `hello-world` image from the Docker Hub.
+3. The Docker daemon created a new container from that image which runs the executable that produces the output you are currently reading.
+4. The Docker daemon streamed that output to the Docker client, which sent it to your terminal.
+
+## The Docker run command
+
+The `docker run` command is the most important command in Docker. It creates a new container from an image and runs a command inside that container.
+
+1. **Starts a Running Container** - Starts a running container, based on the container image. Think of this as the “alive” or “inflated” version of the container – it’s actually doing something.
+2. **Performs Default Action **- If the container has a default action set, it will perform that default action. This could be as simple as printing a message (as above) or running a whole analysis pipeline!
+
+3. **Shuts Down the Container **- Once the default action is complete, the container stops running (or exits). The container image is still there, but nothing is actively running.		
+
+
+## Understand the Docker CLI
+
+The Docker command line interface consists of multiple levels. That means that you can run `docker` commands with different subcommands.
+
+Invoking a Docker command always starts with `docker` followed by a command and a subcommand such as 
+`docker [command] [subcommand] [additional options] `.
+
+
+::: {.callout-note}
+
+## Exercise: Explore the Docker CLI
+
+Run `docker` to get an overview of the available commands. Explore some commands and subcommands. Which ones might be important for the rest of the workshop?
+
+:::
+
+
+::: {.callout-tip collapse="true"}
+
+## Getting help with the Docker CLI
+For every command you can add `--help` to get more information about the command and its options. For example, to get help on the `run` command, you can run:
+
+```bash
+docker run --help
+```
+:::
+
+
+## Run a command inside a container
+
+Now that you have run your first container, let's do something that is a bit more useful.
+
+Let's imagine for data science project, you want to use Python. Do you have Python installed on your machine? If not, you can run a Python container to run Python code.
+
+```bash
+docker run -it python:3.13-slim python
+```
+
+You should see a output similar to the following and are presented with a Python prompt:
+
+```bash
+
+Unable to find image 'python:3.12-slim' locally
+3.12-slim: Pulling from library/python
+13808c22b207: Pull complete 
+6c9a484475c1: Pull complete 
+78bef5c7424f: Pull complete 
+42f0d54f5caa: Pull complete 
+1723cff2f16b: Pull complete 
+Digest: sha256:541d45d3d675fb8197f534525a671e2f8d66c882b89491f9dda271f4f94dcd06
+Status: Downloaded newer image for python:3.12-slim
+Python 3.12.3 (main, Apr 10 2024, 03:39:08) [GCC 12.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+
+Type `print("Hello World")` or some calculation like `1+1` to interact with the Python interpreter.
+
+Of course, you can also run any other (more advanced) Python code 🙂
+
+To exit the Python interpreter, type `exit()`. This will also exit the container.
+
+
+## Managing images and containers
+
+### Containers
+
+To manage containers, you can use the `docker container ls` command. This command lists all running containers. If you want to see all containers, including stopped containers, you can add the `-a` (`--all`) option:
+
+```bash
+docker container ls -a
+```
+
+You see a output similar to this:
+
+```bash
+CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
+882a85072ff8   hello-world   "/hello"   11 minutes ago   Exited (0) 11 minutes ago             practical_jennings
+```
+
+This gives you an overview of all containers that are currently running or have been run on your computer. Take a moment to familarize yourself with the displayed information:
+
+- `CONTAINER ID` column shows the unique identifier of the container
+- `IMAGE` column shows the name of the image
+- `COMMAND` column shows the command that was run inside the container
+- `CREATED` column shows when the container was created
+- `STATUS` column shows the current status of the container
+- `PORTS` column shows the ports that are exposed by the container
+- `NAMES` column shows the name of the container
+
+
+
+### Images
+
+
+When you run a container, the underlying image is downloaded and stored on your computer. You can see all images that are stored on your computer with the following command:
+
+```bash
+docker image ls
+```
+
+You see a output similar to this:
+
+```bash
+REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+hello-world   latest    d2c94e258dcb   11 months ago   13.3kB
+```
+
+This gives you an overview of all images that are stored on your computer. Take a moment to familarize yourself with the displayed information:
+
+- `REPOSITORY` column shows the name of the image
+- `TAG` column shows the version of the image,
+- `IMAGE ID` column shows the unique identifier of the image
+- `CREATED` column shows when the image was created
+- `SIZE` column shows the size of the image.
+
+The `hello-world` image is very small. However some images can be considerable larger. Therfore, it makes sense to monitor the size of your images and remove images that you no longer need.
+
+
+::: {.callout-note}
+
+## Exercise: Remove images
+
+Remove the `hello-world` image from your computer. Type `docker image rm` command, followed by the image id to remove an image. After removing, run `docker image ls` to check if the image has been removed.
+:::
+
+
+::: {.callout-tip}
+
+## Layered file system
+
+Note that the image size does not necessarily translate to occupied disk space. Images that contain the same software components can share them and save disk space. The concept behind this is called *layered file system*. We will learn more about this later. 
+:::
+
+## Finding containers
+
+For most applications, Docker images are available and can be downloaded. Databases that host Docker images are called *registries*. 
+Docker's offical registry is [Docker Hub](https://hub.docker.com/). The `docker run` command is integrated with Docker Hub. 
+For example, when we ran `docker run hello-world`, Docker automatically pulled the `hello-world` image from Docker Hub.
+
+
+When searching for public images, pay attention to the folllowing points: 
+
+- *Use the official images when possible*. They are maintained by the software developers and are usually well-documented. Regularly updated and popular containers are more likely to be secure and stable.
+- If the image is not offical, is it maintained by a well-established company or organisation? 
+- *Check if the image has a Dockerfile or Github repository associated it*. Only then, you can reproduce how the image was produced and that it is not introducing potentially malicious code.
+
+
+::: {.callout-note}
+
+## Exercise: Browse Docker Hub and run a container of yoru search
+
+Go to [Docker Hub](https://hub.docker.com/) and search for a container that you would like to run. Run the container on your computer.
+
+Not sure, where to start? How about a container for a programming language (e.g. R, Python, Matlab)?
+
+Want to go further? There's a way to look for for container with a `docker` command. Do you find it?
+
+:::
+
+
+
+::: {.callout-important}
+
+## Always specify the image's version
+
+Note that images can have different versions that is specified in via the *tag* (e.g. `python:3.12`). 
+When the tag is not specified, Docker will use the `latest` tag by default that refers to the most recent version of the image. 
+If the image is updated, the `latest` tag will point to the updated version.
+Therefore it is best practice to always specify the version of the image that you want to use.
+
+:::
