@@ -18,7 +18,7 @@ book:
     - part: "Docker Fundamentals"
       chapters:
         - 01-introduction.qmd
-        - 02-stable_computing_environments.qmd
+        #- 02-stable_computing_environments.qmd
         - 03-first_steps.qmd
         - 04-dockerfile.qmd
         - 05-advanced_docker.qmd
