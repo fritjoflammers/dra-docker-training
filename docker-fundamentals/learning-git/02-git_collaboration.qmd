@@ -1,8 +1,15 @@
 ## Collaborating with Git
 
+::: {.callout-tip}
+## Learning objectives
+
+- You have learned that git is great for collaborating with other developers.
+- You know how you can `pull` changes from a remote repository, that are not present in your local repository.
+- Can merge changes from the remote repository with your local repository and know how to resolve conflicts.
+- You have learned how to create a new branch, work on it and merge it back to the main branch.
+:::
+
 ## The default git workflow
-
-
 
 
 You have learned about the standard git workflow in the previous chapter, where you work on your local repository, commit changes and push them to the remote repository.

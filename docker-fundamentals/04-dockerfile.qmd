@@ -5,10 +5,10 @@ Duration: 40 min
 ::: {.callout-tip}
 ## Learning objectives
 
-- You know what a Dockerfile is and understand how it used to build an image.
-- You will be able to create a Dockerfile to containerize an application.
-- You can build an image from a Dockerfile and publish it to a registry.
-- You know how to correclty name and tag an image. 
+- Know what a Dockerfile is and understand how it used to build an image.
+- Being able to create a Dockerfile to containerize an application.
+- You canBuild an image from a Dockerfile and publish it to a registry.
+- Kow how to correctly name and tag an image. 
 
 :::
 

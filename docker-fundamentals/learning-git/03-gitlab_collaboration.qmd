@@ -1,5 +1,16 @@
 ## GitLab for collaboration
 
+::: {.callout-tip}
+## Learning objectives
+
+- Know that GitLab, just like GitHub, is a web-based Git repository manager.
+- You have learned that GitLab provides features to manage the development process and facilitate collaboration between developers.
+- Can use merge requests to propose and review changes before merging them into the main branch. 
+- You know that issues are a way to manage the development process, track bugs, and discuss new features. 
+:::
+
+
+## GitLab
 GitLab is a web-based Git repository manager with wiki and issue tracking features.
 
 It is a software that allows to host and manage remote repositories. 
