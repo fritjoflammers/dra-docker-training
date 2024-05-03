@@ -222,7 +222,7 @@
     "href": "learning-git/03-gitlab_collaboration.html",
     "title": "5  GitLab for collaboration",
     "section": "",
-    "text": "5.1 Merge requests\nWhen you work in a team, you may want to review the changes before merging them into the main branch.\nIt is a feature of GitLab to allow are structured comparison of code changes, and comment on them. Often a Merge Request becomes a long thread of comments and discussions about the changes, where multiple developers particpate.\nIn software development, this is called a “code review” and an integral part of the development process ensuring a good code quality and functionality.\nWhen the code review is concluded, the Merge Request allows merging the changes into the main branch directly on the GitLab platform.\nTo incorporate the changes in the main branch after merge on your local repository, you need to pull the changes from the remote repository:",
+    "text": "5.1 GitLab\nGitLab is a web-based Git repository manager with wiki and issue tracking features.\nIt is a software that allows to host and manage remote repositories.\nIn addition, it provides a lot of features to manage the development process and facilitate collaboration between developers.",
     "crumbs": [
       "Version Control with Git",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>GitLab for collaboration</span>"
@@ -232,8 +232,8 @@
     "objectID": "learning-git/03-gitlab_collaboration.html#merge-requests",
     "href": "learning-git/03-gitlab_collaboration.html#merge-requests",
     "title": "5  GitLab for collaboration",
-    "section": "",
-    "text": "A merge or pull request is an additional step before merging changes into the main branch. It allows to review the changes and discuss them.\n\n\n\n\ngit pull\n\n\n\n\n\n\nMerge Request vs Pull Request\n\n\n\nIn GitLab, a request to merge changes is called a “Merge Request”. In GitHub, it is called a “Pull Request”. The describe the very same thing. Due to GitHub’s popularity the term “Pull Request”, often abbreviated as “PR”, is more common.",
+    "section": "5.2 Merge requests",
+    "text": "5.2 Merge requests\nWhen you work in a team, you may want to review the changes before merging them into the main branch.\nIt is a feature of GitLab to allow are structured comparison of code changes, and comment on them. Often a Merge Request becomes a long thread of comments and discussions about the changes, where multiple developers particpate.\nIn software development, this is called a “code review” and an integral part of the development process ensuring a good code quality and functionality.\n\n\n\nA merge or pull request is an additional step before merging changes into the main branch. It allows to review the changes and discuss them.\n\n\nWhen the code review is concluded, the Merge Request allows merging the changes into the main branch directly on the GitLab platform.\nTo incorporate the changes in the main branch after merge on your local repository, you need to pull the changes from the remote repository:\ngit pull\n\n\n\n\n\n\nMerge Request vs Pull Request\n\n\n\nIn GitLab, a request to merge changes is called a “Merge Request”. In GitHub, it is called a “Pull Request”. The describe the very same thing. Due to GitHub’s popularity the term “Pull Request”, often abbreviated as “PR”, is more common.",
     "crumbs": [
       "Version Control with Git",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>GitLab for collaboration</span>"
@@ -243,8 +243,8 @@
     "objectID": "learning-git/03-gitlab_collaboration.html#issues",
     "href": "learning-git/03-gitlab_collaboration.html#issues",
     "title": "5  GitLab for collaboration",
-    "section": "5.2 Issues",
-    "text": "5.2 Issues\nThe second feature, that is provided by GitLab and GitHub to manage the development process are “Issues”.\nIssues are used to track bugs, feature requests, and other tasks.\nSimilar to merge requests, they can be seen as discussion threads to guide the development process. Also, they can be used important project management to track changes or new ideas.\nIssues do not directly interact with the git workflow, but can be used to describe features and can be referred to in feature-branches or pull request.\n\n\n\nA development workflow includes, first creating an issue, then start the develpoment on a new branch and finally merge the changes into the main branch",
+    "section": "5.3 Issues",
+    "text": "5.3 Issues\nThe second feature, that is provided by GitLab and GitHub to manage the development process are “Issues”.\nIssues are used to track bugs, feature requests, and other tasks.\nSimilar to merge requests, they can be seen as discussion threads to guide the development process. Also, they can be used important project management to track changes or new ideas.\nIssues do not directly interact with the git workflow, but can be used to describe features and can be referred to in feature-branches or pull request.\n\n\n\nA development workflow includes, first creating an issue, then start the develpoment on a new branch and finally merge the changes into the main branch",
     "crumbs": [
       "Version Control with Git",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>GitLab for collaboration</span>"
