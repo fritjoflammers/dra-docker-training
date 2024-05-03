@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>dra course - Docker Fundamentals - 8&nbsp; First steps with Docker</title>
+<title>dra course - Docker Fundamentals - 7&nbsp; First steps with Docker</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./04-dockerfile.html" rel="next">
-<link href="./02-stable_computing_environments.html" rel="prev">
+<link href="./01-introduction.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -115,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./03-first_steps.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">First steps with Docker</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./03-first_steps.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">First steps with Docker</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -212,32 +212,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-stable_computing_environments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Stable Computing Environments</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./03-first_steps.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">First steps with Docker</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">First steps with Docker</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-dockerfile.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05-advanced_docker.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Advanced docker</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Advanced docker</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06-code_clinic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Code clinic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Code clinic</span></span></a>
   </div>
 </li>
       </ul>
@@ -252,27 +246,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#install-docker" id="toc-install-docker" class="nav-link active" data-scroll-target="#install-docker"><span class="header-section-number">8.1</span> Install Docker</a></li>
-  <li><a href="#the-docker-command-line-interface-cli" id="toc-the-docker-command-line-interface-cli" class="nav-link" data-scroll-target="#the-docker-command-line-interface-cli"><span class="header-section-number">8.2</span> The Docker Command Line Interface (CLI)</a></li>
-  <li><a href="#run-the-hello-world-container" id="toc-run-the-hello-world-container" class="nav-link" data-scroll-target="#run-the-hello-world-container"><span class="header-section-number">8.3</span> Run the <code>hello-world</code> container</a></li>
-  <li><a href="#the-docker-run-command" id="toc-the-docker-run-command" class="nav-link" data-scroll-target="#the-docker-run-command"><span class="header-section-number">8.4</span> The Docker run command</a></li>
-  <li><a href="#understand-the-docker-cli" id="toc-understand-the-docker-cli" class="nav-link" data-scroll-target="#understand-the-docker-cli"><span class="header-section-number">8.5</span> Understand the Docker CLI</a></li>
-  <li><a href="#run-a-command-inside-a-container" id="toc-run-a-command-inside-a-container" class="nav-link" data-scroll-target="#run-a-command-inside-a-container"><span class="header-section-number">8.6</span> Run a command inside a container</a></li>
-  <li><a href="#managing-images-and-containers" id="toc-managing-images-and-containers" class="nav-link" data-scroll-target="#managing-images-and-containers"><span class="header-section-number">8.7</span> Managing images and containers</a>
+  <li><a href="#install-docker" id="toc-install-docker" class="nav-link active" data-scroll-target="#install-docker"><span class="header-section-number">7.1</span> Install Docker</a></li>
+  <li><a href="#the-docker-command-line-interface-cli" id="toc-the-docker-command-line-interface-cli" class="nav-link" data-scroll-target="#the-docker-command-line-interface-cli"><span class="header-section-number">7.2</span> The Docker Command Line Interface (CLI)</a></li>
+  <li><a href="#run-the-hello-world-container" id="toc-run-the-hello-world-container" class="nav-link" data-scroll-target="#run-the-hello-world-container"><span class="header-section-number">7.3</span> Run the <code>hello-world</code> container</a></li>
+  <li><a href="#the-docker-run-command" id="toc-the-docker-run-command" class="nav-link" data-scroll-target="#the-docker-run-command"><span class="header-section-number">7.4</span> The Docker run command</a></li>
+  <li><a href="#understand-the-docker-cli" id="toc-understand-the-docker-cli" class="nav-link" data-scroll-target="#understand-the-docker-cli"><span class="header-section-number">7.5</span> Understand the Docker CLI</a></li>
+  <li><a href="#run-a-command-inside-a-container" id="toc-run-a-command-inside-a-container" class="nav-link" data-scroll-target="#run-a-command-inside-a-container"><span class="header-section-number">7.6</span> Run a command inside a container</a></li>
+  <li><a href="#managing-images-and-containers" id="toc-managing-images-and-containers" class="nav-link" data-scroll-target="#managing-images-and-containers"><span class="header-section-number">7.7</span> Managing images and containers</a>
   <ul class="collapse">
-  <li><a href="#containers" id="toc-containers" class="nav-link" data-scroll-target="#containers"><span class="header-section-number">8.7.1</span> Containers</a></li>
-  <li><a href="#images" id="toc-images" class="nav-link" data-scroll-target="#images"><span class="header-section-number">8.7.2</span> Images</a></li>
+  <li><a href="#containers" id="toc-containers" class="nav-link" data-scroll-target="#containers"><span class="header-section-number">7.7.1</span> Containers</a></li>
+  <li><a href="#images" id="toc-images" class="nav-link" data-scroll-target="#images"><span class="header-section-number">7.7.2</span> Images</a></li>
   </ul></li>
-  <li><a href="#finding-containers" id="toc-finding-containers" class="nav-link" data-scroll-target="#finding-containers"><span class="header-section-number">8.8</span> Finding containers</a></li>
+  <li><a href="#finding-containers" id="toc-finding-containers" class="nav-link" data-scroll-target="#finding-containers"><span class="header-section-number">7.8</span> Finding containers</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./03-first_steps.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">First steps with Docker</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./03-first_steps.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">First steps with Docker</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">First steps with Docker</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">First steps with Docker</span></h1>
 </div>
 
 
@@ -301,19 +295,19 @@ Learning objectives
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Be able check if Docker is installed on your machine</li>
-<li>Run and interact Docker containers</li>
-<li>Understand some important Docker commands and how to get help with the Docker CLI (Command Line Interface)</li>
-<li>Finding new containers on Docker Hub</li>
+<li>You will be able check if Docker is installed on your machine</li>
+<li>You can run and interact Docker containers</li>
+<li>You know some important Docker commands and how to get help with the Docker CLI (Command Line Interface)</li>
+<li>You have learned about the registry Docker Hub, and how to find and run containers from there.</li>
 </ul>
 </div>
 </div>
-<section id="install-docker" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="install-docker"><span class="header-section-number">8.1</span> Install Docker</h2>
+<section id="install-docker" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="install-docker"><span class="header-section-number">7.1</span> Install Docker</h2>
 <p>See Installation Instructions.</p>
 </section>
-<section id="the-docker-command-line-interface-cli" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="the-docker-command-line-interface-cli"><span class="header-section-number">8.2</span> The Docker Command Line Interface (CLI)</h2>
+<section id="the-docker-command-line-interface-cli" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="the-docker-command-line-interface-cli"><span class="header-section-number">7.2</span> The Docker Command Line Interface (CLI)</h2>
 <p>Although Docker is now also provided with a graphical user interface, it is important to understand the command line interface (CLI) as it is the most powerful way to interact with Docker. Furthermote, if you work on a remote server such as a high performance computing cluster or a compute cloud, you will not have access to a graphical user interface.</p>
 <p>Run your first Docker command. It should show you the version of Docker that is installed on your machine.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -338,8 +332,8 @@ Do you get an error message?
 </div>
 </div>
 </section>
-<section id="run-the-hello-world-container" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="run-the-hello-world-container"><span class="header-section-number">8.3</span> Run the <code>hello-world</code> container</h2>
+<section id="run-the-hello-world-container" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="run-the-hello-world-container"><span class="header-section-number">7.3</span> Run the <code>hello-world</code> container</h2>
 <p>Now run your first container:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run hello-world</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Do you get an output similar to the following?</p>
@@ -372,8 +366,8 @@ Do you get an error message?
 <li>The Docker daemon streamed that output to the Docker client, which sent it to your terminal.</li>
 </ol>
 </section>
-<section id="the-docker-run-command" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="the-docker-run-command"><span class="header-section-number">8.4</span> The Docker run command</h2>
+<section id="the-docker-run-command" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="the-docker-run-command"><span class="header-section-number">7.4</span> The Docker run command</h2>
 <p>The <code>docker run</code> command is the most important command in Docker. It creates a new container from an image and runs a command inside that container.</p>
 <ol type="1">
 <li><p><strong>Starts a Running Container</strong> - Starts a running container, based on the container image. Think of this as the “alive” or “inflated” version of the container – it’s actually doing something.</p></li>
@@ -381,8 +375,8 @@ Do you get an error message?
 <li><p><strong>Shuts Down the Container </strong>- Once the default action is complete, the container stops running (or exits). The container image is still there, but nothing is actively running.</p></li>
 </ol>
 </section>
-<section id="understand-the-docker-cli" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="understand-the-docker-cli"><span class="header-section-number">8.5</span> Understand the Docker CLI</h2>
+<section id="understand-the-docker-cli" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="understand-the-docker-cli"><span class="header-section-number">7.5</span> Understand the Docker CLI</h2>
 <p>The Docker command line interface consists of multiple levels. That means that you can run <code>docker</code> commands with different subcommands.</p>
 <p>Invoking a Docker command always starts with <code>docker</code> followed by a command and a subcommand such as <code>docker [command] [subcommand] [additional options]</code>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -416,8 +410,8 @@ Getting help with the Docker CLI
 </div>
 </div>
 </section>
-<section id="run-a-command-inside-a-container" class="level2" data-number="8.6">
-<h2 data-number="8.6" class="anchored" data-anchor-id="run-a-command-inside-a-container"><span class="header-section-number">8.6</span> Run a command inside a container</h2>
+<section id="run-a-command-inside-a-container" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="run-a-command-inside-a-container"><span class="header-section-number">7.6</span> Run a command inside a container</h2>
 <p>Now that you have run your first container, let’s do something that is a bit more useful.</p>
 <p>Let’s imagine for data science project, you want to use Python. Do you have Python installed on your machine? If not, you can run a Python container to run Python code.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-it</span> python:3.13-slim python</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -439,10 +433,10 @@ Getting help with the Docker CLI
 <p>Of course, you can also run any other (more advanced) Python code 🙂</p>
 <p>To exit the Python interpreter, type <code>exit()</code>. This will also exit the container.</p>
 </section>
-<section id="managing-images-and-containers" class="level2" data-number="8.7">
-<h2 data-number="8.7" class="anchored" data-anchor-id="managing-images-and-containers"><span class="header-section-number">8.7</span> Managing images and containers</h2>
-<section id="containers" class="level3" data-number="8.7.1">
-<h3 data-number="8.7.1" class="anchored" data-anchor-id="containers"><span class="header-section-number">8.7.1</span> Containers</h3>
+<section id="managing-images-and-containers" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="managing-images-and-containers"><span class="header-section-number">7.7</span> Managing images and containers</h2>
+<section id="containers" class="level3" data-number="7.7.1">
+<h3 data-number="7.7.1" class="anchored" data-anchor-id="containers"><span class="header-section-number">7.7.1</span> Containers</h3>
 <p>To manage containers, you can use the <code>docker container ls</code> command. This command lists all running containers. If you want to see all containers, including stopped containers, you can add the <code>-a</code> (<code>--all</code>) option:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> container ls <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You see a output similar to this:</p>
@@ -459,8 +453,8 @@ Getting help with the Docker CLI
 <li><code>NAMES</code> column shows the name of the container</li>
 </ul>
 </section>
-<section id="images" class="level3" data-number="8.7.2">
-<h3 data-number="8.7.2" class="anchored" data-anchor-id="images"><span class="header-section-number">8.7.2</span> Images</h3>
+<section id="images" class="level3" data-number="7.7.2">
+<h3 data-number="7.7.2" class="anchored" data-anchor-id="images"><span class="header-section-number">7.7.2</span> Images</h3>
 <p>When you run a container, the underlying image is downloaded and stored on your computer. You can see all images that are stored on your computer with the following command:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> image ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You see a output similar to this:</p>
@@ -503,8 +497,8 @@ Layered file system
 </div>
 </section>
 </section>
-<section id="finding-containers" class="level2" data-number="8.8">
-<h2 data-number="8.8" class="anchored" data-anchor-id="finding-containers"><span class="header-section-number">8.8</span> Finding containers</h2>
+<section id="finding-containers" class="level2" data-number="7.8">
+<h2 data-number="7.8" class="anchored" data-anchor-id="finding-containers"><span class="header-section-number">7.8</span> Finding containers</h2>
 <p>For most applications, Docker images are available and can be downloaded. Databases that host Docker images are called <em>registries</em>. Docker’s offical registry is <a href="https://hub.docker.com/">Docker Hub</a>. The <code>docker run</code> command is integrated with Docker Hub. For example, when we ran <code>docker run hello-world</code>, Docker automatically pulled the <code>hello-world</code> image from Docker Hub.</p>
 <p>When searching for public images, pay attention to the folllowing points:</p>
 <ul>
@@ -956,13 +950,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./02-stable_computing_environments.html" class="pagination-link" aria-label="Stable Computing Environments">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Stable Computing Environments</span></span>
+      <a href="./01-introduction.html" class="pagination-link" aria-label="Stable Computing Environments">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Stable Computing Environments</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./04-dockerfile.html" class="pagination-link" aria-label="Creating a Dockerfile">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

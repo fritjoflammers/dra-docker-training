@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>dra course - Docker Fundamentals - 9&nbsp; Creating a Dockerfile</title>
+<title>dra course - Docker Fundamentals - 8&nbsp; Creating a Dockerfile</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -115,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./04-dockerfile.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./04-dockerfile.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -212,32 +212,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-stable_computing_environments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Stable Computing Environments</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./03-first_steps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">First steps with Docker</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">First steps with Docker</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-dockerfile.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05-advanced_docker.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Advanced docker</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Advanced docker</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06-code_clinic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Code clinic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Code clinic</span></span></a>
   </div>
 </li>
       </ul>
@@ -252,15 +246,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">9.1</span> Introduction</a></li>
-  <li><a href="#what-is-a-dockerfile" id="toc-what-is-a-dockerfile" class="nav-link" data-scroll-target="#what-is-a-dockerfile"><span class="header-section-number">9.2</span> What is a Dockerfile?</a></li>
-  <li><a href="#building-a-container-for-python-analysis" id="toc-building-a-container-for-python-analysis" class="nav-link" data-scroll-target="#building-a-container-for-python-analysis"><span class="header-section-number">9.3</span> Building a container for Python analysis</a></li>
-  <li><a href="#binding-host-directories-to-a-container" id="toc-binding-host-directories-to-a-container" class="nav-link" data-scroll-target="#binding-host-directories-to-a-container"><span class="header-section-number">9.4</span> Binding host directories to a container</a></li>
-  <li><a href="#understand-layers" id="toc-understand-layers" class="nav-link" data-scroll-target="#understand-layers"><span class="header-section-number">9.5</span> Understand layers</a></li>
-  <li><a href="#publishing-an-image" id="toc-publishing-an-image" class="nav-link" data-scroll-target="#publishing-an-image"><span class="header-section-number">9.6</span> Publishing an image</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">8.1</span> Introduction</a></li>
+  <li><a href="#what-is-a-dockerfile" id="toc-what-is-a-dockerfile" class="nav-link" data-scroll-target="#what-is-a-dockerfile"><span class="header-section-number">8.2</span> What is a Dockerfile?</a></li>
+  <li><a href="#building-a-container-for-python-analysis" id="toc-building-a-container-for-python-analysis" class="nav-link" data-scroll-target="#building-a-container-for-python-analysis"><span class="header-section-number">8.3</span> Building a container for Python analysis</a></li>
+  <li><a href="#entrypoint-vs-cmd" id="toc-entrypoint-vs-cmd" class="nav-link" data-scroll-target="#entrypoint-vs-cmd"><span class="header-section-number">8.4</span> ENTRYPOINT vs CMD</a></li>
+  <li><a href="#binding-host-directories-to-a-container" id="toc-binding-host-directories-to-a-container" class="nav-link" data-scroll-target="#binding-host-directories-to-a-container"><span class="header-section-number">8.5</span> Binding host directories to a container</a></li>
+  <li><a href="#understand-layers" id="toc-understand-layers" class="nav-link" data-scroll-target="#understand-layers"><span class="header-section-number">8.6</span> Understand layers</a></li>
+  <li><a href="#publishing-an-image" id="toc-publishing-an-image" class="nav-link" data-scroll-target="#publishing-an-image"><span class="header-section-number">8.7</span> Publishing an image</a>
   <ul class="collapse">
-  <li><a href="#docker-hub" id="toc-docker-hub" class="nav-link" data-scroll-target="#docker-hub"><span class="header-section-number">9.6.1</span> Docker Hub</a></li>
-  <li><a href="#helmholtz-codebase-registry" id="toc-helmholtz-codebase-registry" class="nav-link" data-scroll-target="#helmholtz-codebase-registry"><span class="header-section-number">9.6.2</span> Helmholtz Codebase Registry</a></li>
+  <li><a href="#docker-hub" id="toc-docker-hub" class="nav-link" data-scroll-target="#docker-hub"><span class="header-section-number">8.7.1</span> Docker Hub</a></li>
+  <li><a href="#helmholtz-codebase-registry" id="toc-helmholtz-codebase-registry" class="nav-link" data-scroll-target="#helmholtz-codebase-registry"><span class="header-section-number">8.7.2</span> Helmholtz Codebase Registry</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -268,9 +263,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./04-dockerfile.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./04-dockerfile.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></h1>
 </div>
 
 
@@ -299,15 +294,15 @@ Learning objectives
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Understand what a Dockerfile is and how it works.</li>
-<li>Create a Dockerfile for a simple application.</li>
-<li>Build an image from a Dockerfile.</li>
-<li>Know how to correclty name and tag an image.</li>
+<li>You know what a Dockerfile is and understand how it used to build an image.</li>
+<li>You will be able to create a Dockerfile to containerize an application.</li>
+<li>You can build an image from a Dockerfile and publish it to a registry.</li>
+<li>You know how to correclty name and tag an image.</li>
 </ul>
 </div>
 </div>
-<section id="introduction" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">9.1</span> Introduction</h2>
+<section id="introduction" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">8.1</span> Introduction</h2>
 <p>Research projects typically require a lot of specific software that is not available in predefined Docker image. In this session, we will create a first own Dockerfile to build a custom image.</p>
 <p>Do you remember the Docker workflow?</p>
 <div class="quarto-figure quarto-figure-center">
@@ -318,8 +313,8 @@ Learning objectives
 </div>
 <p>In order to build an image, we need to create a Dockerfile.</p>
 </section>
-<section id="what-is-a-dockerfile" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="what-is-a-dockerfile"><span class="header-section-number">9.2</span> What is a Dockerfile?</h2>
+<section id="what-is-a-dockerfile" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="what-is-a-dockerfile"><span class="header-section-number">8.2</span> What is a Dockerfile?</h2>
 <p>A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.</p>
 <p>The Dockerfile a set of simple commands that describe how to build a Docker image.</p>
 <p>Let’s have a look at this example for our own “Hello World” application:</p>
@@ -353,17 +348,19 @@ Tip
 </div>
 </div>
 </section>
-<section id="building-a-container-for-python-analysis" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="building-a-container-for-python-analysis"><span class="header-section-number">9.3</span> Building a container for Python analysis</h2>
+<section id="building-a-container-for-python-analysis" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="building-a-container-for-python-analysis"><span class="header-section-number">8.3</span> Building a container for Python analysis</h2>
 <p>Next, we will create a Dockerfile that plots some data using Python. For this we require some more libraries, the Python script and the data to be plotted.</p>
 <p>This image also builds upon the <code>alpine</code> image and then installs Python3 and the required libraries.</p>
 <p>For the <code>ENTRYPOINT</code>, we will start the container with the Python script <code>plot.py</code> that reads the data from a CSV file.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dockerfile</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> alpine</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> alpine:3.12</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">RUN</span> <span class="ex">apk</span> add <span class="at">--update</span> python3 py3-pip py3-matplotlib py3-numpy py3-pandas</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">ENTRYPOINT</span> [<span class="st">"python3"</span>, <span class="st">"plot.py"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <code>RUN</code> command is used to execute a command when building the image. It is typically used to install software packages.</p>
+<p>In this example, we use the package manager <code>apk</code> that is part of alpine linux, to install Python3, pip, and the required Python libraries.</p>
 <p>What happens when you build this image and run the container?</p>
 <p>Probably you will get an error message that the file <code>plot.py</code> is not found.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3:</span> can<span class="st">'t open file '</span>//plot.py<span class="st">': [Errno 2] No such file or directory</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -371,7 +368,7 @@ Tip
 <p>The problem is that the a Docker container does not have access to the host file system. Neither, did we include the file in the image.</p>
 <p>Let’s do that now:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dockerfile</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> alpine</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> alpine:3.12</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">RUN</span> <span class="ex">apk</span> add <span class="at">--update</span> python3 py3-pip py3-matplotlib py3-numpy py3-pandas</span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
@@ -387,12 +384,25 @@ Tip
 </ul>
 <p>Now, build the image and run the container.</p>
 </section>
-<section id="binding-host-directories-to-a-container" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="binding-host-directories-to-a-container"><span class="header-section-number">9.4</span> Binding host directories to a container</h2>
+<section id="entrypoint-vs-cmd" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="entrypoint-vs-cmd"><span class="header-section-number">8.4</span> ENTRYPOINT vs CMD</h2>
+<p>Both, <code>ENTRYPOINT</code> and <code>CMD</code> specify what commands are executed when the container starts.</p>
+<p>However, <code>ENTRYPOINT</code> is <em>always</em> executed. The command defined here is not optional.</p>
+<p>In contrast, <code>CMD</code> is optional. If a command is specified when running the container, it will override the <code>CMD</code> command.</p>
+<p>So for example, if a Dockerfile ends with the following line:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CMD</span> [<span class="st">"python3"</span>, <span class="st">"plot.py"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can run the container with a different command like this:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run my-python-plot:0.1 python3 plot.py <span class="at">--help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can also combine <code>ENTRYPOINT</code> and <code>CMD</code>:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ENTRYPOINT</span> [<span class="st">"python3"</span>]</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">CMD</span> [<span class="st">"plot.py"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="binding-host-directories-to-a-container" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="binding-host-directories-to-a-container"><span class="header-section-number">8.5</span> Binding host directories to a container</h2>
 <p>The <code>COPY</code> command is useful to include files in the image, but it is not practical for large files or files that change frequently.</p>
 <p>To access files on the host system from a container, we can use <em>bind mounts</em>. This is a way to mount a host directory into a container.</p>
 <p>To bind mount the current directory into the container, we can use the <code>-v</code> flag when running the container:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-v</span> <span class="va">$(</span><span class="bu">pwd</span><span class="va">)</span>:/app python-plot:0.1 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-v</span> <span class="va">$(</span><span class="bu">pwd</span><span class="va">)</span>:/app python-plot:0.1 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This command mounts the current directory into the <code>/app</code> directory in the container. The <code>$(pwd)</code> command is used to get the current directory.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -408,18 +418,37 @@ Exercise:
 </div>
 </div>
 </section>
-<section id="understand-layers" class="level2" data-number="9.5">
-<h2 data-number="9.5" class="anchored" data-anchor-id="understand-layers"><span class="header-section-number">9.5</span> Understand layers</h2>
+<section id="understand-layers" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="understand-layers"><span class="header-section-number">8.6</span> Understand layers</h2>
 <p>When building an image, Docker uses a layered file system. Each command in the Dockerfile creates a new layer in the image.</p>
 <p>When you build an image, Docker caches the layers. If you change a command in the Dockerfile, Docker will only rebuild the layers that are affected by the change.</p>
+<p>Consider this example:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dockerfile</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> alpine:3.12</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="kw">RUN</span> <span class="ex">apk</span> add <span class="at">--update</span> python3 py3-pip py3-matplotlib py3-numpy py3-pandas</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="kw">WORKDIR</span> /app</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="kw">COPY</span> annual-temp-anomalies.csv plot.py /app</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="kw">ENTRYPOINT</span> [<span class="st">"python3"</span>, <span class="st">"plot.py"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>When you build this image, Docker will create the following layers:</p>
+<ol type="1">
+<li>The base image <code>alpine:3.12</code></li>
+<li>The installed packages</li>
+<li>The working directory</li>
+<li>The copied files</li>
+</ol>
+<p>If you change the <code>COPY</code> command, Docker will only rebuild the last two layers.</p>
 </section>
-<section id="publishing-an-image" class="level2" data-number="9.6">
-<h2 data-number="9.6" class="anchored" data-anchor-id="publishing-an-image"><span class="header-section-number">9.6</span> Publishing an image</h2>
-<section id="docker-hub" class="level3" data-number="9.6.1">
-<h3 data-number="9.6.1" class="anchored" data-anchor-id="docker-hub"><span class="header-section-number">9.6.1</span> Docker Hub</h3>
+<section id="publishing-an-image" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="publishing-an-image"><span class="header-section-number">8.7</span> Publishing an image</h2>
+<section id="docker-hub" class="level3" data-number="8.7.1">
+<h3 data-number="8.7.1" class="anchored" data-anchor-id="docker-hub"><span class="header-section-number">8.7.1</span> Docker Hub</h3>
 </section>
-<section id="helmholtz-codebase-registry" class="level3" data-number="9.6.2">
-<h3 data-number="9.6.2" class="anchored" data-anchor-id="helmholtz-codebase-registry"><span class="header-section-number">9.6.2</span> Helmholtz Codebase Registry</h3>
+<section id="helmholtz-codebase-registry" class="level3" data-number="8.7.2">
+<h3 data-number="8.7.2" class="anchored" data-anchor-id="helmholtz-codebase-registry"><span class="header-section-number">8.7.2</span> Helmholtz Codebase Registry</h3>
 
 
 </section>
@@ -838,12 +867,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./03-first_steps.html" class="pagination-link" aria-label="First steps with Docker">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">First steps with Docker</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">First steps with Docker</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./05-advanced_docker.html" class="pagination-link" aria-label="Advanced docker">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Advanced docker</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Advanced docker</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

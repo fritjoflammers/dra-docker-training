@@ -308,221 +308,243 @@
   {
     "objectID": "03-first_steps.html",
     "href": "03-first_steps.html",
-    "title": "8  First steps with Docker",
+    "title": "7  First steps with Docker",
     "section": "",
-    "text": "8.1 Install Docker\nSee Installation Instructions.",
+    "text": "7.1 Install Docker\nSee Installation Instructions.",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>First steps with Docker</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>First steps with Docker</span>"
     ]
   },
   {
     "objectID": "03-first_steps.html#the-docker-command-line-interface-cli",
     "href": "03-first_steps.html#the-docker-command-line-interface-cli",
-    "title": "8  First steps with Docker",
-    "section": "8.2 The Docker Command Line Interface (CLI)",
-    "text": "8.2 The Docker Command Line Interface (CLI)\nAlthough Docker is now also provided with a graphical user interface, it is important to understand the command line interface (CLI) as it is the most powerful way to interact with Docker. Furthermote, if you work on a remote server such as a high performance computing cluster or a compute cloud, you will not have access to a graphical user interface.\nRun your first Docker command. It should show you the version of Docker that is installed on your machine.\ndocker --version\nTo check that Docker is able to run containers, you can run the following command:\ndocker container ls\nThis command lists a summary of all running containers. If you have not run any containers yet, the output will be a empty table.\n\n\n\n\n\n\nDo you get an error message?\n\n\n\n\n\nIf you get an error message similar to the following, the underlying Docker engine is not running:\nCannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?",
+    "title": "7  First steps with Docker",
+    "section": "7.2 The Docker Command Line Interface (CLI)",
+    "text": "7.2 The Docker Command Line Interface (CLI)\nAlthough Docker is now also provided with a graphical user interface, it is important to understand the command line interface (CLI) as it is the most powerful way to interact with Docker. Furthermote, if you work on a remote server such as a high performance computing cluster or a compute cloud, you will not have access to a graphical user interface.\nRun your first Docker command. It should show you the version of Docker that is installed on your machine.\ndocker --version\nTo check that Docker is able to run containers, you can run the following command:\ndocker container ls\nThis command lists a summary of all running containers. If you have not run any containers yet, the output will be a empty table.\n\n\n\n\n\n\nDo you get an error message?\n\n\n\n\n\nIf you get an error message similar to the following, the underlying Docker engine is not running:\nCannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>First steps with Docker</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>First steps with Docker</span>"
     ]
   },
   {
     "objectID": "03-first_steps.html#run-the-hello-world-container",
     "href": "03-first_steps.html#run-the-hello-world-container",
-    "title": "8  First steps with Docker",
-    "section": "8.3 Run the hello-world container",
-    "text": "8.3 Run the hello-world container\nNow run your first container:\ndocker run hello-world\nDo you get an output similar to the following?\nIf so, congratulations! 🎉 You have successfully run your first container.\nHello from Docker!\nThis message shows that your installation appears to be working correctly.\n\nTo generate this message, Docker took the following steps:\n 1. The Docker client contacted the Docker daemon.\n 2. The Docker daemon pulled the \"hello-world\" image from the Docker Hub.\n    (amd64)\n 3. The Docker daemon created a new container from that image which runs the\n    executable that produces the output you are currently reading.\n 4. The Docker daemon streamed that output to the Docker client, which sent it\n    to your terminal.\n\nTo try something more ambitious, you can run an Ubuntu container with:\n $ docker run -it ubuntu bash\n\nShare images, automate workflows, and more with a free Docker ID:\n https://hub.docker.com/\n\nFor more examples and ideas, visit:\n https://docs.docker.com/get-started/\nLet’s break down what happened when you ran the hello-world container:\n\nThe Docker client contacted the Docker daemon.\nThe Docker daemon pulled the hello-world image from the Docker Hub.\nThe Docker daemon created a new container from that image which runs the executable that produces the output you are currently reading.\nThe Docker daemon streamed that output to the Docker client, which sent it to your terminal.",
+    "title": "7  First steps with Docker",
+    "section": "7.3 Run the hello-world container",
+    "text": "7.3 Run the hello-world container\nNow run your first container:\ndocker run hello-world\nDo you get an output similar to the following?\nIf so, congratulations! 🎉 You have successfully run your first container.\nHello from Docker!\nThis message shows that your installation appears to be working correctly.\n\nTo generate this message, Docker took the following steps:\n 1. The Docker client contacted the Docker daemon.\n 2. The Docker daemon pulled the \"hello-world\" image from the Docker Hub.\n    (amd64)\n 3. The Docker daemon created a new container from that image which runs the\n    executable that produces the output you are currently reading.\n 4. The Docker daemon streamed that output to the Docker client, which sent it\n    to your terminal.\n\nTo try something more ambitious, you can run an Ubuntu container with:\n $ docker run -it ubuntu bash\n\nShare images, automate workflows, and more with a free Docker ID:\n https://hub.docker.com/\n\nFor more examples and ideas, visit:\n https://docs.docker.com/get-started/\nLet’s break down what happened when you ran the hello-world container:\n\nThe Docker client contacted the Docker daemon.\nThe Docker daemon pulled the hello-world image from the Docker Hub.\nThe Docker daemon created a new container from that image which runs the executable that produces the output you are currently reading.\nThe Docker daemon streamed that output to the Docker client, which sent it to your terminal.",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>First steps with Docker</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>First steps with Docker</span>"
     ]
   },
   {
     "objectID": "03-first_steps.html#the-docker-run-command",
     "href": "03-first_steps.html#the-docker-run-command",
-    "title": "8  First steps with Docker",
-    "section": "8.4 The Docker run command",
-    "text": "8.4 The Docker run command\nThe docker run command is the most important command in Docker. It creates a new container from an image and runs a command inside that container.\n\nStarts a Running Container - Starts a running container, based on the container image. Think of this as the “alive” or “inflated” version of the container – it’s actually doing something.\nPerforms Default Action - If the container has a default action set, it will perform that default action. This could be as simple as printing a message (as above) or running a whole analysis pipeline!\nShuts Down the Container - Once the default action is complete, the container stops running (or exits). The container image is still there, but nothing is actively running.",
+    "title": "7  First steps with Docker",
+    "section": "7.4 The Docker run command",
+    "text": "7.4 The Docker run command\nThe docker run command is the most important command in Docker. It creates a new container from an image and runs a command inside that container.\n\nStarts a Running Container - Starts a running container, based on the container image. Think of this as the “alive” or “inflated” version of the container – it’s actually doing something.\nPerforms Default Action - If the container has a default action set, it will perform that default action. This could be as simple as printing a message (as above) or running a whole analysis pipeline!\nShuts Down the Container - Once the default action is complete, the container stops running (or exits). The container image is still there, but nothing is actively running.",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>First steps with Docker</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>First steps with Docker</span>"
     ]
   },
   {
     "objectID": "03-first_steps.html#understand-the-docker-cli",
     "href": "03-first_steps.html#understand-the-docker-cli",
-    "title": "8  First steps with Docker",
-    "section": "8.5 Understand the Docker CLI",
-    "text": "8.5 Understand the Docker CLI\nThe Docker command line interface consists of multiple levels. That means that you can run docker commands with different subcommands.\nInvoking a Docker command always starts with docker followed by a command and a subcommand such as docker [command] [subcommand] [additional options].\n\n\n\n\n\n\nExercise: Explore the Docker CLI\n\n\n\nRun docker to get an overview of the available commands. Explore some commands and subcommands. Which ones might be important for the rest of the workshop?\n\n\n\n\n\n\n\n\nGetting help with the Docker CLI\n\n\n\n\n\nFor every command you can add --help to get more information about the command and its options. For example, to get help on the run command, you can run:\ndocker run --help",
+    "title": "7  First steps with Docker",
+    "section": "7.5 Understand the Docker CLI",
+    "text": "7.5 Understand the Docker CLI\nThe Docker command line interface consists of multiple levels. That means that you can run docker commands with different subcommands.\nInvoking a Docker command always starts with docker followed by a command and a subcommand such as docker [command] [subcommand] [additional options].\n\n\n\n\n\n\nExercise: Explore the Docker CLI\n\n\n\nRun docker to get an overview of the available commands. Explore some commands and subcommands. Which ones might be important for the rest of the workshop?\n\n\n\n\n\n\n\n\nGetting help with the Docker CLI\n\n\n\n\n\nFor every command you can add --help to get more information about the command and its options. For example, to get help on the run command, you can run:\ndocker run --help",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>First steps with Docker</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>First steps with Docker</span>"
     ]
   },
   {
     "objectID": "03-first_steps.html#run-a-command-inside-a-container",
     "href": "03-first_steps.html#run-a-command-inside-a-container",
-    "title": "8  First steps with Docker",
-    "section": "8.6 Run a command inside a container",
-    "text": "8.6 Run a command inside a container\nNow that you have run your first container, let’s do something that is a bit more useful.\nLet’s imagine for data science project, you want to use Python. Do you have Python installed on your machine? If not, you can run a Python container to run Python code.\ndocker run -it python:3.13-slim python\nYou should see a output similar to the following and are presented with a Python prompt:\n\nUnable to find image 'python:3.12-slim' locally\n3.12-slim: Pulling from library/python\n13808c22b207: Pull complete \n6c9a484475c1: Pull complete \n78bef5c7424f: Pull complete \n42f0d54f5caa: Pull complete \n1723cff2f16b: Pull complete \nDigest: sha256:541d45d3d675fb8197f534525a671e2f8d66c882b89491f9dda271f4f94dcd06\nStatus: Downloaded newer image for python:3.12-slim\nPython 3.12.3 (main, Apr 10 2024, 03:39:08) [GCC 12.2.0] on linux\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n&gt;&gt;&gt;\nType print(\"Hello World\") or some calculation like 1+1 to interact with the Python interpreter.\nOf course, you can also run any other (more advanced) Python code 🙂\nTo exit the Python interpreter, type exit(). This will also exit the container.",
+    "title": "7  First steps with Docker",
+    "section": "7.6 Run a command inside a container",
+    "text": "7.6 Run a command inside a container\nNow that you have run your first container, let’s do something that is a bit more useful.\nLet’s imagine for data science project, you want to use Python. Do you have Python installed on your machine? If not, you can run a Python container to run Python code.\ndocker run -it python:3.13-slim python\nYou should see a output similar to the following and are presented with a Python prompt:\n\nUnable to find image 'python:3.12-slim' locally\n3.12-slim: Pulling from library/python\n13808c22b207: Pull complete \n6c9a484475c1: Pull complete \n78bef5c7424f: Pull complete \n42f0d54f5caa: Pull complete \n1723cff2f16b: Pull complete \nDigest: sha256:541d45d3d675fb8197f534525a671e2f8d66c882b89491f9dda271f4f94dcd06\nStatus: Downloaded newer image for python:3.12-slim\nPython 3.12.3 (main, Apr 10 2024, 03:39:08) [GCC 12.2.0] on linux\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n&gt;&gt;&gt;\nType print(\"Hello World\") or some calculation like 1+1 to interact with the Python interpreter.\nOf course, you can also run any other (more advanced) Python code 🙂\nTo exit the Python interpreter, type exit(). This will also exit the container.",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>First steps with Docker</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>First steps with Docker</span>"
     ]
   },
   {
     "objectID": "03-first_steps.html#managing-images-and-containers",
     "href": "03-first_steps.html#managing-images-and-containers",
-    "title": "8  First steps with Docker",
-    "section": "8.7 Managing images and containers",
-    "text": "8.7 Managing images and containers\n\n8.7.1 Containers\nTo manage containers, you can use the docker container ls command. This command lists all running containers. If you want to see all containers, including stopped containers, you can add the -a (--all) option:\ndocker container ls -a\nYou see a output similar to this:\nCONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES\n882a85072ff8   hello-world   \"/hello\"   11 minutes ago   Exited (0) 11 minutes ago             practical_jennings\nThis gives you an overview of all containers that are currently running or have been run on your computer. Take a moment to familarize yourself with the displayed information:\n\nCONTAINER ID column shows the unique identifier of the container\nIMAGE column shows the name of the image\nCOMMAND column shows the command that was run inside the container\nCREATED column shows when the container was created\nSTATUS column shows the current status of the container\nPORTS column shows the ports that are exposed by the container\nNAMES column shows the name of the container\n\n\n\n8.7.2 Images\nWhen you run a container, the underlying image is downloaded and stored on your computer. You can see all images that are stored on your computer with the following command:\ndocker image ls\nYou see a output similar to this:\nREPOSITORY    TAG       IMAGE ID       CREATED         SIZE\nhello-world   latest    d2c94e258dcb   11 months ago   13.3kB\nThis gives you an overview of all images that are stored on your computer. Take a moment to familarize yourself with the displayed information:\n\nREPOSITORY column shows the name of the image\nTAG column shows the version of the image,\nIMAGE ID column shows the unique identifier of the image\nCREATED column shows when the image was created\nSIZE column shows the size of the image.\n\nThe hello-world image is very small. However some images can be considerable larger. Therfore, it makes sense to monitor the size of your images and remove images that you no longer need.\n\n\n\n\n\n\nExercise: Remove images\n\n\n\nRemove the hello-world image from your computer. Type docker image rm command, followed by the image id to remove an image. After removing, run docker image ls to check if the image has been removed.\n\n\n\n\n\n\n\n\nLayered file system\n\n\n\nNote that the image size does not necessarily translate to occupied disk space. Images that contain the same software components can share them and save disk space. The concept behind this is called layered file system. We will learn more about this later.",
+    "title": "7  First steps with Docker",
+    "section": "7.7 Managing images and containers",
+    "text": "7.7 Managing images and containers\n\n7.7.1 Containers\nTo manage containers, you can use the docker container ls command. This command lists all running containers. If you want to see all containers, including stopped containers, you can add the -a (--all) option:\ndocker container ls -a\nYou see a output similar to this:\nCONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES\n882a85072ff8   hello-world   \"/hello\"   11 minutes ago   Exited (0) 11 minutes ago             practical_jennings\nThis gives you an overview of all containers that are currently running or have been run on your computer. Take a moment to familarize yourself with the displayed information:\n\nCONTAINER ID column shows the unique identifier of the container\nIMAGE column shows the name of the image\nCOMMAND column shows the command that was run inside the container\nCREATED column shows when the container was created\nSTATUS column shows the current status of the container\nPORTS column shows the ports that are exposed by the container\nNAMES column shows the name of the container\n\n\n\n7.7.2 Images\nWhen you run a container, the underlying image is downloaded and stored on your computer. You can see all images that are stored on your computer with the following command:\ndocker image ls\nYou see a output similar to this:\nREPOSITORY    TAG       IMAGE ID       CREATED         SIZE\nhello-world   latest    d2c94e258dcb   11 months ago   13.3kB\nThis gives you an overview of all images that are stored on your computer. Take a moment to familarize yourself with the displayed information:\n\nREPOSITORY column shows the name of the image\nTAG column shows the version of the image,\nIMAGE ID column shows the unique identifier of the image\nCREATED column shows when the image was created\nSIZE column shows the size of the image.\n\nThe hello-world image is very small. However some images can be considerable larger. Therfore, it makes sense to monitor the size of your images and remove images that you no longer need.\n\n\n\n\n\n\nExercise: Remove images\n\n\n\nRemove the hello-world image from your computer. Type docker image rm command, followed by the image id to remove an image. After removing, run docker image ls to check if the image has been removed.\n\n\n\n\n\n\n\n\nLayered file system\n\n\n\nNote that the image size does not necessarily translate to occupied disk space. Images that contain the same software components can share them and save disk space. The concept behind this is called layered file system. We will learn more about this later.",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>First steps with Docker</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>First steps with Docker</span>"
     ]
   },
   {
     "objectID": "03-first_steps.html#finding-containers",
     "href": "03-first_steps.html#finding-containers",
-    "title": "8  First steps with Docker",
-    "section": "8.8 Finding containers",
-    "text": "8.8 Finding containers\nFor most applications, Docker images are available and can be downloaded. Databases that host Docker images are called registries. Docker’s offical registry is Docker Hub. The docker run command is integrated with Docker Hub. For example, when we ran docker run hello-world, Docker automatically pulled the hello-world image from Docker Hub.\nWhen searching for public images, pay attention to the folllowing points:\n\nUse the official images when possible. They are maintained by the software developers and are usually well-documented. Regularly updated and popular containers are more likely to be secure and stable.\nIf the image is not offical, is it maintained by a well-established company or organisation?\nCheck if the image has a Dockerfile or Github repository associated it. Only then, you can reproduce how the image was produced and that it is not introducing potentially malicious code.\n\n\n\n\n\n\n\nExercise: Browse Docker Hub and run a container of yoru search\n\n\n\nGo to Docker Hub and search for a container that you would like to run. Run the container on your computer.\nNot sure, where to start? How about a container for a programming language (e.g. R, Python, Matlab)?\nWant to go further? There’s a way to look for for container with a docker command. Do you find it?\n\n\n\n\n\n\n\n\nAlways specify the image’s version\n\n\n\nNote that images can have different versions that is specified in via the tag (e.g. python:3.12). When the tag is not specified, Docker will use the latest tag by default that refers to the most recent version of the image. If the image is updated, the latest tag will point to the updated version. Therefore it is best practice to always specify the version of the image that you want to use.",
+    "title": "7  First steps with Docker",
+    "section": "7.8 Finding containers",
+    "text": "7.8 Finding containers\nFor most applications, Docker images are available and can be downloaded. Databases that host Docker images are called registries. Docker’s offical registry is Docker Hub. The docker run command is integrated with Docker Hub. For example, when we ran docker run hello-world, Docker automatically pulled the hello-world image from Docker Hub.\nWhen searching for public images, pay attention to the folllowing points:\n\nUse the official images when possible. They are maintained by the software developers and are usually well-documented. Regularly updated and popular containers are more likely to be secure and stable.\nIf the image is not offical, is it maintained by a well-established company or organisation?\nCheck if the image has a Dockerfile or Github repository associated it. Only then, you can reproduce how the image was produced and that it is not introducing potentially malicious code.\n\n\n\n\n\n\n\nExercise: Browse Docker Hub and run a container of yoru search\n\n\n\nGo to Docker Hub and search for a container that you would like to run. Run the container on your computer.\nNot sure, where to start? How about a container for a programming language (e.g. R, Python, Matlab)?\nWant to go further? There’s a way to look for for container with a docker command. Do you find it?\n\n\n\n\n\n\n\n\nAlways specify the image’s version\n\n\n\nNote that images can have different versions that is specified in via the tag (e.g. python:3.12). When the tag is not specified, Docker will use the latest tag by default that refers to the most recent version of the image. If the image is updated, the latest tag will point to the updated version. Therefore it is best practice to always specify the version of the image that you want to use.",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>First steps with Docker</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>First steps with Docker</span>"
     ]
   },
   {
     "objectID": "04-dockerfile.html",
     "href": "04-dockerfile.html",
-    "title": "9  Creating a Dockerfile",
+    "title": "8  Creating a Dockerfile",
     "section": "",
-    "text": "9.1 Introduction\nResearch projects typically require a lot of specific software that is not available in predefined Docker image. In this session, we will create a first own Dockerfile to build a custom image.\nDo you remember the Docker workflow?\nIn order to build an image, we need to create a Dockerfile.",
+    "text": "8.1 Introduction\nResearch projects typically require a lot of specific software that is not available in predefined Docker image. In this session, we will create a first own Dockerfile to build a custom image.\nDo you remember the Docker workflow?\nIn order to build an image, we need to create a Dockerfile.",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
     ]
   },
   {
     "objectID": "04-dockerfile.html#introduction",
     "href": "04-dockerfile.html#introduction",
-    "title": "9  Creating a Dockerfile",
+    "title": "8  Creating a Dockerfile",
     "section": "",
     "text": "Docker workflow",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
     ]
   },
   {
     "objectID": "04-dockerfile.html#what-is-a-dockerfile",
     "href": "04-dockerfile.html#what-is-a-dockerfile",
-    "title": "9  Creating a Dockerfile",
-    "section": "9.2 What is a Dockerfile?",
-    "text": "9.2 What is a Dockerfile?\nA Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.\nThe Dockerfile a set of simple commands that describe how to build a Docker image.\nLet’s have a look at this example for our own “Hello World” application:\n# use the minimal linux alpine image\nFROM alpine:3.12\n\nENTRYPOINT [\"echo\", \"Hello World\"]\nThis Dockerfile uses only two commands:\n\nFROM specifies the base image to use.\nENTRYPOINT specifies the command to run when the container starts.\n\nTo build an image from this Dockerfile, save it into a new directory and run the following command:\ndocker build -t my-hello-world:0.1 .\nThe -t flag is used to tag the image with a name. The . at the end of the command specifies the build context, which is the directory where the Dockerfile is located.\nAfter the build is complete, you can run the image with the following command:\ndocker run my-hello-world\nDoes the output says “Hello World”?\n\n\n\n\n\n\nTip\n\n\n\nNote how the command echo \"Hello World\" is specified as an list or array. This is the so called exec form of the ENTRYPOINT command. It is recommended because it explicitly states the command and its arguments.\nThere is also a shell form of the ENTRYPOINT command, which is specified as a string. Docker translates this internally to the exec form by running the command as shell command.",
+    "title": "8  Creating a Dockerfile",
+    "section": "8.2 What is a Dockerfile?",
+    "text": "8.2 What is a Dockerfile?\nA Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.\nThe Dockerfile a set of simple commands that describe how to build a Docker image.\nLet’s have a look at this example for our own “Hello World” application:\n# use the minimal linux alpine image\nFROM alpine:3.12\n\nENTRYPOINT [\"echo\", \"Hello World\"]\nThis Dockerfile uses only two commands:\n\nFROM specifies the base image to use.\nENTRYPOINT specifies the command to run when the container starts.\n\nTo build an image from this Dockerfile, save it into a new directory and run the following command:\ndocker build -t my-hello-world:0.1 .\nThe -t flag is used to tag the image with a name. The . at the end of the command specifies the build context, which is the directory where the Dockerfile is located.\nAfter the build is complete, you can run the image with the following command:\ndocker run my-hello-world\nDoes the output says “Hello World”?\n\n\n\n\n\n\nTip\n\n\n\nNote how the command echo \"Hello World\" is specified as an list or array. This is the so called exec form of the ENTRYPOINT command. It is recommended because it explicitly states the command and its arguments.\nThere is also a shell form of the ENTRYPOINT command, which is specified as a string. Docker translates this internally to the exec form by running the command as shell command.",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
     ]
   },
   {
     "objectID": "04-dockerfile.html#building-a-container-for-python-analysis",
     "href": "04-dockerfile.html#building-a-container-for-python-analysis",
-    "title": "9  Creating a Dockerfile",
-    "section": "9.3 Building a container for Python analysis",
-    "text": "9.3 Building a container for Python analysis\nNext, we will create a Dockerfile that plots some data using Python. For this we require some more libraries, the Python script and the data to be plotted.\nThis image also builds upon the alpine image and then installs Python3 and the required libraries.\nFor the ENTRYPOINT, we will start the container with the Python script plot.py that reads the data from a CSV file.\n# Dockerfile\nFROM alpine\n\nRUN apk add --update python3 py3-pip py3-matplotlib py3-numpy py3-pandas\n\nENTRYPOINT [\"python3\", \"plot.py\"]\nWhat happens when you build this image and run the container?\nProbably you will get an error message that the file plot.py is not found.\npython3: can't open file '//plot.py': [Errno 2] No such file or directory\nWhy is that? Isn’t the file in the same directory as the Dockerfile?\nThe problem is that the a Docker container does not have access to the host file system. Neither, did we include the file in the image.\nLet’s do that now:\n# Dockerfile\nFROM alpine\n\nRUN apk add --update python3 py3-pip py3-matplotlib py3-numpy py3-pandas\n\nWORKDIR /app\n\nCOPY annual-temp-anomalies.csv plot.py /app\n\nENTRYPOINT [\"python3\", \"plot.py\"]\nLet’s look at the two new commands:\n\nWORKDIR sets the working directory for all subsequent commands. This is similar to the cd command in a shell.\nCOPY copies files from the host to the image. The first argument is the source file on the host, the second argument is the destination in the image.\n\nNow, build the image and run the container.",
+    "title": "8  Creating a Dockerfile",
+    "section": "8.3 Building a container for Python analysis",
+    "text": "8.3 Building a container for Python analysis\nNext, we will create a Dockerfile that plots some data using Python. For this we require some more libraries, the Python script and the data to be plotted.\nThis image also builds upon the alpine image and then installs Python3 and the required libraries.\nFor the ENTRYPOINT, we will start the container with the Python script plot.py that reads the data from a CSV file.\n# Dockerfile\nFROM alpine:3.12\n\nRUN apk add --update python3 py3-pip py3-matplotlib py3-numpy py3-pandas\n\nENTRYPOINT [\"python3\", \"plot.py\"]\nThe RUN command is used to execute a command when building the image. It is typically used to install software packages.\nIn this example, we use the package manager apk that is part of alpine linux, to install Python3, pip, and the required Python libraries.\nWhat happens when you build this image and run the container?\nProbably you will get an error message that the file plot.py is not found.\npython3: can't open file '//plot.py': [Errno 2] No such file or directory\nWhy is that? Isn’t the file in the same directory as the Dockerfile?\nThe problem is that the a Docker container does not have access to the host file system. Neither, did we include the file in the image.\nLet’s do that now:\n# Dockerfile\nFROM alpine:3.12\n\nRUN apk add --update python3 py3-pip py3-matplotlib py3-numpy py3-pandas\n\nWORKDIR /app\n\nCOPY annual-temp-anomalies.csv plot.py /app\n\nENTRYPOINT [\"python3\", \"plot.py\"]\nLet’s look at the two new commands:\n\nWORKDIR sets the working directory for all subsequent commands. This is similar to the cd command in a shell.\nCOPY copies files from the host to the image. The first argument is the source file on the host, the second argument is the destination in the image.\n\nNow, build the image and run the container.",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
+    ]
+  },
+  {
+    "objectID": "04-dockerfile.html#entrypoint-vs-cmd",
+    "href": "04-dockerfile.html#entrypoint-vs-cmd",
+    "title": "8  Creating a Dockerfile",
+    "section": "8.4 ENTRYPOINT vs CMD",
+    "text": "8.4 ENTRYPOINT vs CMD\nBoth, ENTRYPOINT and CMD specify what commands are executed when the container starts.\nHowever, ENTRYPOINT is always executed. The command defined here is not optional.\nIn contrast, CMD is optional. If a command is specified when running the container, it will override the CMD command.\nSo for example, if a Dockerfile ends with the following line:\nCMD [\"python3\", \"plot.py\"]\nYou can run the container with a different command like this:\ndocker run my-python-plot:0.1 python3 plot.py --help\nYou can also combine ENTRYPOINT and CMD:\nENTRYPOINT [\"python3\"]\nCMD [\"plot.py\"]",
+    "crumbs": [
+      "Docker Fundamentals",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
     ]
   },
   {
     "objectID": "04-dockerfile.html#binding-host-directories-to-a-container",
     "href": "04-dockerfile.html#binding-host-directories-to-a-container",
-    "title": "9  Creating a Dockerfile",
-    "section": "9.4 Binding host directories to a container",
-    "text": "9.4 Binding host directories to a container\nThe COPY command is useful to include files in the image, but it is not practical for large files or files that change frequently.\nTo access files on the host system from a container, we can use bind mounts. This is a way to mount a host directory into a container.\nTo bind mount the current directory into the container, we can use the -v flag when running the container:\ndocker run -v $(pwd):/app python-plot:0.1 \nThis command mounts the current directory into the /app directory in the container. The $(pwd) command is used to get the current directory.\n\n\n\n\n\n\nExercise:\n\n\n\nRun the container, not including the files in the image, but using a bind mount.",
+    "title": "8  Creating a Dockerfile",
+    "section": "8.5 Binding host directories to a container",
+    "text": "8.5 Binding host directories to a container\nThe COPY command is useful to include files in the image, but it is not practical for large files or files that change frequently.\nTo access files on the host system from a container, we can use bind mounts. This is a way to mount a host directory into a container.\nTo bind mount the current directory into the container, we can use the -v flag when running the container:\ndocker run -v $(pwd):/app python-plot:0.1 \nThis command mounts the current directory into the /app directory in the container. The $(pwd) command is used to get the current directory.\n\n\n\n\n\n\nExercise:\n\n\n\nRun the container, not including the files in the image, but using a bind mount.",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
     ]
   },
   {
     "objectID": "04-dockerfile.html#understand-layers",
     "href": "04-dockerfile.html#understand-layers",
-    "title": "9  Creating a Dockerfile",
-    "section": "9.5 Understand layers",
-    "text": "9.5 Understand layers\nWhen building an image, Docker uses a layered file system. Each command in the Dockerfile creates a new layer in the image.\nWhen you build an image, Docker caches the layers. If you change a command in the Dockerfile, Docker will only rebuild the layers that are affected by the change.",
+    "title": "8  Creating a Dockerfile",
+    "section": "8.6 Understand layers",
+    "text": "8.6 Understand layers\nWhen building an image, Docker uses a layered file system. Each command in the Dockerfile creates a new layer in the image.\nWhen you build an image, Docker caches the layers. If you change a command in the Dockerfile, Docker will only rebuild the layers that are affected by the change.\nConsider this example:\n# Dockerfile\nFROM alpine:3.12\n\nRUN apk add --update python3 py3-pip py3-matplotlib py3-numpy py3-pandas\n\nWORKDIR /app\n\nCOPY annual-temp-anomalies.csv plot.py /app\n\nENTRYPOINT [\"python3\", \"plot.py\"]\nWhen you build this image, Docker will create the following layers:\n\nThe base image alpine:3.12\nThe installed packages\nThe working directory\nThe copied files\n\nIf you change the COPY command, Docker will only rebuild the last two layers.",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
     ]
   },
   {
     "objectID": "04-dockerfile.html#publishing-an-image",
     "href": "04-dockerfile.html#publishing-an-image",
-    "title": "9  Creating a Dockerfile",
-    "section": "9.6 Publishing an image",
-    "text": "9.6 Publishing an image\n\n9.6.1 Docker Hub\n\n\n9.6.2 Helmholtz Codebase Registry",
+    "title": "8  Creating a Dockerfile",
+    "section": "8.7 Publishing an image",
+    "text": "8.7 Publishing an image\n\n8.7.1 Docker Hub\n\n\n8.7.2 Helmholtz Codebase Registry",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
     ]
   },
   {
     "objectID": "05-advanced_docker.html",
     "href": "05-advanced_docker.html",
-    "title": "10  Advanced docker",
+    "title": "9  Advanced docker",
     "section": "",
-    "text": "10.1 Multi-container application (docker-compose)",
+    "text": "9.1 Multi-container application (docker-compose)",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Advanced docker</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Advanced docker</span>"
     ]
   },
   {
     "objectID": "05-advanced_docker.html#scaling",
     "href": "05-advanced_docker.html#scaling",
-    "title": "10  Advanced docker",
-    "section": "10.2 Scaling",
-    "text": "10.2 Scaling\n\n10.2.1 Docker Swarm\n\n\n10.2.2 Kubernetes",
+    "title": "9  Advanced docker",
+    "section": "9.2 Scaling",
+    "text": "9.2 Scaling\n\n9.2.1 Docker Swarm\n\n\n9.2.2 Kubernetes",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Advanced docker</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Advanced docker</span>"
     ]
   },
   {
     "objectID": "05-advanced_docker.html#alternative-container-engine",
     "href": "05-advanced_docker.html#alternative-container-engine",
-    "title": "10  Advanced docker",
-    "section": "10.3 Alternative container engine",
-    "text": "10.3 Alternative container engine\n\n10.3.1 Apptainer / Singularity",
+    "title": "9  Advanced docker",
+    "section": "9.3 Alternative container engine",
+    "text": "9.3 Alternative container engine\n\n9.3.1 Apptainer / Singularity",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Advanced docker</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Advanced docker</span>"
     ]
   },
   {
     "objectID": "06-code_clinic.html",
     "href": "06-code_clinic.html",
-    "title": "11  Code clinic",
+    "title": "10  Code clinic",
     "section": "",
-    "text": "11.1 Practical tips",
+    "text": "10.1 Resources",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Code clinic</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Code clinic</span>"
+    ]
+  },
+  {
+    "objectID": "06-code_clinic.html#resources",
+    "href": "06-code_clinic.html#resources",
+    "title": "10  Code clinic",
+    "section": "",
+    "text": "Docker CLI cheat sheet\nDocker Docs",
+    "crumbs": [
+      "Docker Fundamentals",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Code clinic</span>"
     ]
   },
   {
     "objectID": "06-code_clinic.html#practical-tips",
     "href": "06-code_clinic.html#practical-tips",
-    "title": "11  Code clinic",
-    "section": "",
-    "text": "11.1.1 Mounting volumes",
+    "title": "10  Code clinic",
+    "section": "10.2 Practical tips",
+    "text": "10.2 Practical tips\n\n10.2.1 Mounting volumes",
     "crumbs": [
       "Docker Fundamentals",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Code clinic</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Code clinic</span>"
     ]
   }
 ]

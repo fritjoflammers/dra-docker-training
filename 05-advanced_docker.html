@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>dra course - Docker Fundamentals - 10&nbsp; Advanced docker</title>
+<title>dra course - Docker Fundamentals - 9&nbsp; Advanced docker</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./05-advanced_docker.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Advanced docker</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./05-advanced_docker.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Advanced docker</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -178,32 +178,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-stable_computing_environments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Stable Computing Environments</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./03-first_steps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">First steps with Docker</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">First steps with Docker</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-dockerfile.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05-advanced_docker.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Advanced docker</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Advanced docker</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06-code_clinic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Code clinic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Code clinic</span></span></a>
   </div>
 </li>
       </ul>
@@ -218,15 +212,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#multi-container-application-docker-compose" id="toc-multi-container-application-docker-compose" class="nav-link active" data-scroll-target="#multi-container-application-docker-compose"><span class="header-section-number">10.1</span> Multi-container application (docker-compose)</a></li>
-  <li><a href="#scaling" id="toc-scaling" class="nav-link" data-scroll-target="#scaling"><span class="header-section-number">10.2</span> Scaling</a>
+  <li><a href="#multi-container-application-docker-compose" id="toc-multi-container-application-docker-compose" class="nav-link active" data-scroll-target="#multi-container-application-docker-compose"><span class="header-section-number">9.1</span> Multi-container application (docker-compose)</a></li>
+  <li><a href="#scaling" id="toc-scaling" class="nav-link" data-scroll-target="#scaling"><span class="header-section-number">9.2</span> Scaling</a>
   <ul class="collapse">
-  <li><a href="#docker-swarm" id="toc-docker-swarm" class="nav-link" data-scroll-target="#docker-swarm"><span class="header-section-number">10.2.1</span> Docker Swarm</a></li>
-  <li><a href="#kubernetes" id="toc-kubernetes" class="nav-link" data-scroll-target="#kubernetes"><span class="header-section-number">10.2.2</span> Kubernetes</a></li>
+  <li><a href="#docker-swarm" id="toc-docker-swarm" class="nav-link" data-scroll-target="#docker-swarm"><span class="header-section-number">9.2.1</span> Docker Swarm</a></li>
+  <li><a href="#kubernetes" id="toc-kubernetes" class="nav-link" data-scroll-target="#kubernetes"><span class="header-section-number">9.2.2</span> Kubernetes</a></li>
   </ul></li>
-  <li><a href="#alternative-container-engine" id="toc-alternative-container-engine" class="nav-link" data-scroll-target="#alternative-container-engine"><span class="header-section-number">10.3</span> Alternative container engine</a>
+  <li><a href="#alternative-container-engine" id="toc-alternative-container-engine" class="nav-link" data-scroll-target="#alternative-container-engine"><span class="header-section-number">9.3</span> Alternative container engine</a>
   <ul class="collapse">
-  <li><a href="#apptainer-singularity" id="toc-apptainer-singularity" class="nav-link" data-scroll-target="#apptainer-singularity"><span class="header-section-number">10.3.1</span> Apptainer / Singularity</a></li>
+  <li><a href="#apptainer-singularity" id="toc-apptainer-singularity" class="nav-link" data-scroll-target="#apptainer-singularity"><span class="header-section-number">9.3.1</span> Apptainer / Singularity</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -234,9 +228,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./05-advanced_docker.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Advanced docker</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html">Docker Fundamentals</a></li><li class="breadcrumb-item"><a href="./05-advanced_docker.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Advanced docker</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Advanced docker</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Advanced docker</span></h1>
 </div>
 
 
@@ -255,22 +249,22 @@ ul.task-list li input[type="checkbox"] {
 
 <p>These are some additional topics that are not covered in the basic docker course.</p>
 <p>See following topics are placeholders.</p>
-<section id="multi-container-application-docker-compose" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="multi-container-application-docker-compose"><span class="header-section-number">10.1</span> Multi-container application (docker-compose)</h2>
+<section id="multi-container-application-docker-compose" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="multi-container-application-docker-compose"><span class="header-section-number">9.1</span> Multi-container application (docker-compose)</h2>
 </section>
-<section id="scaling" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="scaling"><span class="header-section-number">10.2</span> Scaling</h2>
-<section id="docker-swarm" class="level3" data-number="10.2.1">
-<h3 data-number="10.2.1" class="anchored" data-anchor-id="docker-swarm"><span class="header-section-number">10.2.1</span> Docker Swarm</h3>
+<section id="scaling" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="scaling"><span class="header-section-number">9.2</span> Scaling</h2>
+<section id="docker-swarm" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="docker-swarm"><span class="header-section-number">9.2.1</span> Docker Swarm</h3>
 </section>
-<section id="kubernetes" class="level3" data-number="10.2.2">
-<h3 data-number="10.2.2" class="anchored" data-anchor-id="kubernetes"><span class="header-section-number">10.2.2</span> Kubernetes</h3>
+<section id="kubernetes" class="level3" data-number="9.2.2">
+<h3 data-number="9.2.2" class="anchored" data-anchor-id="kubernetes"><span class="header-section-number">9.2.2</span> Kubernetes</h3>
 </section>
 </section>
-<section id="alternative-container-engine" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="alternative-container-engine"><span class="header-section-number">10.3</span> Alternative container engine</h2>
-<section id="apptainer-singularity" class="level3" data-number="10.3.1">
-<h3 data-number="10.3.1" class="anchored" data-anchor-id="apptainer-singularity"><span class="header-section-number">10.3.1</span> Apptainer / Singularity</h3>
+<section id="alternative-container-engine" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="alternative-container-engine"><span class="header-section-number">9.3</span> Alternative container engine</h2>
+<section id="apptainer-singularity" class="level3" data-number="9.3.1">
+<h3 data-number="9.3.1" class="anchored" data-anchor-id="apptainer-singularity"><span class="header-section-number">9.3.1</span> Apptainer / Singularity</h3>
 
 
 </section>
@@ -689,12 +683,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./04-dockerfile.html" class="pagination-link" aria-label="Creating a Dockerfile">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Creating a Dockerfile</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./06-code_clinic.html" class="pagination-link" aria-label="Code clinic">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Code clinic</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Code clinic</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
