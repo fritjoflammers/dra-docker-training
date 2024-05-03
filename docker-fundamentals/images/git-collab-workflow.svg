@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.32026164"
-     inkscape:cx="-99.918303"
-     inkscape:cy="432.4589"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="207.64272"
+     inkscape:cy="653.37203"
      inkscape:window-width="1488"
      inkscape:window-height="928"
      inkscape:window-x="26"
@@ -701,6 +701,12 @@
        width="186.31249"
        height="67.915729"
        id="rect105994" />
+    <rect
+       x="-186.2746"
+       y="523.92858"
+       width="186.31249"
+       height="67.915729"
+       id="rect106509" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -710,7 +716,10 @@
        style="fill:none;stroke:#000000;stroke-width:0.70555556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157)"
        d="m 3.4586855,30.817557 198.3380845,0"
        id="path877"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -732,299 +741,434 @@
        id="path21550"
        cx="27.246731"
        cy="30.994244"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-18.37694,-44.010907)"
        id="text21656"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect21658);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect21658);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106337">Commit</tspan></text>
+         id="tspan107014">Commit</tspan></text>
     <path
        style="fill:#2c5aa0;stroke:#3771c8;stroke-width:0.70837;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 57.47125,62.560901 c 34.615287,0 34.795281,0 34.795281,0"
-       id="path25817" />
+       id="path25817"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#3771c8;stroke-width:0.70699;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 36.219735,30.80766 C 51.089732,30.73976 30.833573,62.225421 57.71127,62.524742"
        id="path25112"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <circle
        style="fill:#3771c8;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle30722"
        cx="64.802551"
        cy="62.573002"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,18.596996,-0.61477016)"
        id="text30724"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect30726);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect30726);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106339">Commit</tspan></text>
+         id="tspan107016">Commit</tspan></text>
     <circle
        style="fill:#3771c8;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle30814"
        cx="83.542725"
        cy="62.42173"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#3771c8;stroke-width:0.712855;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157-3)"
        d="M 91.772399,62.519269 C 107.26946,62.578723 94.148816,49.793024 114.12356,49.09708"
        id="path30888"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,74.362546,-22.905825)"
        id="text31217"
        style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect31219);fill:#000000;fill-opacity:1;stroke:none"
        x="46.167969"
-       y="0"><tspan
+       y="0"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="143.42188"
          y="267.43359"
-         id="tspan106343"><tspan
+         id="tspan107020"><tspan
            style="text-align:center;text-anchor:middle"
-           id="tspan106341">Merge / Pull 
+           id="tspan107018">Merge / Pull 
 </tspan></tspan><tspan
          x="160.42188"
          y="287.43359"
-         id="tspan106347"><tspan
+         id="tspan107024"><tspan
            style="text-align:center;text-anchor:middle"
-           id="tspan106345">Request</tspan></tspan></text>
+           id="tspan107022">Request</tspan></tspan></text>
     <path
        style="fill:none;stroke:#2c5aa0;stroke-width:0.70555556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157-3)"
        d="m 139.41672,49.413816 c 14.72972,0.08305 2.25875,-17.776824 21.24443,-18.748962"
        id="path42052"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle42376"
        cx="56.912979"
        cy="30.994244"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,11.28931,-44.010907)"
        id="text42378"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect42380);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect42380);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106349">Commit</tspan></text>
+         id="tspan107026">Commit</tspan></text>
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle42382"
        cx="90.62281"
        cy="30.994244"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,44.999142,-44.010907)"
        id="text42384"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect42386);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect42386);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106351">Commit</tspan></text>
+         id="tspan107028">Commit</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,110.81689,-44.010907)"
        id="text42388"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect42390);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect42390);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106353">Merge</tspan></text>
+         id="tspan107030">Merge</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,38.534231,-0.61477016)"
        id="text49598"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49600);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49600);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106355">Commit</tspan></text>
+         id="tspan107032">Commit</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157)"
        d="M 3.4586855,115.55252 H 201.79677"
        id="path49602"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle49604"
        cx="27.246731"
        cy="115.7292"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-18.37694,40.724053)"
        id="text49606"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49638);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49638);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106357">Commit</tspan></text>
+         id="tspan107034">Commit</tspan></text>
     <path
        style="fill:#2c5aa0;stroke:#3771c8;stroke-width:0.70837;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 57.47125,147.29586 c 34.615287,0 34.795281,0 34.795281,0"
-       id="path49608" />
+       id="path49608"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#3771c8;stroke-width:0.70699;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 36.219735,115.54262 c 14.869997,-0.0679 -5.386162,31.41776 21.491535,31.71708"
        id="path49610"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <circle
        style="fill:#3771c8;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle49612"
        cx="64.802551"
        cy="147.30797"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,18.596996,84.12019)"
        id="text49614"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49640);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49640);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106359">Commit</tspan></text>
+         id="tspan107036">Commit</tspan></text>
     <circle
        style="fill:#3771c8;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle49616"
        cx="83.542725"
        cy="147.15669"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#3771c8;stroke-width:0.712855;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157-3)"
        d="m 91.772399,147.25423 c 42.669161,0.56028 12.620011,-32.02112 43.174931,-31.62402"
        id="path49618"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle49626"
        cx="56.912979"
        cy="115.7292"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,11.28931,40.724053)"
        id="text49628"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49644);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49644);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106361">Commit</tspan></text>
+         id="tspan107038">Commit</tspan></text>
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle49630"
        cx="90.62281"
        cy="115.7292"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,44.999142,40.724053)"
        id="text49632"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49646);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49646);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106363">Commit</tspan></text>
+         id="tspan107040">Commit</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,88.165298,40.025782)"
        id="text49634"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49648);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49648);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106365">Merge</tspan></text>
+         id="tspan107042">Merge</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,38.534231,84.12019)"
        id="text49636"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49650);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49650);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106367">Commit</tspan></text>
+         id="tspan107044">Commit</tspan></text>
     <path
        style="fill:none;stroke:#3771c8;stroke-width:0.530321;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 33.812038,196.28775 c 8.387868,-0.23291 11.432958,1.47276 11.902315,8.73011 0.26701,4.1286 0.834766,8.25825 4.959261,8.12965"
        id="path79917"
-       sodipodi:nodetypes="csc" />
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157)"
        d="M 3.4586855,196.36826 H 201.79677"
        id="path50130"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle50132"
        cx="27.246731"
        cy="196.54495"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-18.37694,121.5398)"
        id="text50134"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50160);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50160);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106369">Commit</tspan></text>
+         id="tspan107046">Commit</tspan></text>
     <path
        style="fill:#2c5aa0;stroke:#3771c8;stroke-width:0.70837;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 83.9296,228.1116 c 34.61539,0 34.79539,0 34.79539,0"
-       id="path50136" />
+       id="path50136"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#3771c8;stroke-width:0.70699;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 55.396928,210.51574 c 14.313108,-0.24257 19.509267,1.53391 20.310181,9.09255 0.455627,4.29999 1.424449,8.60109 8.462511,8.46715"
        id="path50138"
-       sodipodi:nodetypes="csc" />
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <circle
        style="fill:#3771c8;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle50140"
        cx="91.26091"
        cy="228.12372"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,45.055346,164.93593)"
        id="text50142"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50162);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50162);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106371">Commit</tspan></text>
+         id="tspan107048">Commit</tspan></text>
     <circle
        style="fill:#3771c8;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle50144"
        cx="110.00107"
        cy="227.97244"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle50152"
        cx="117.08113"
        cy="196.54495"
-       r="2.6260836" />
+       r="2.6260836"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,71.457492,121.5398)"
        id="text50154"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50166);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50166);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106373">Commit</tspan></text>
+         id="tspan107050">Commit</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,136.68525,121.29493)"
        id="text50156"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50168);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50168);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106375">Merge</tspan></text>
+         id="tspan107052">Merge</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,64.992581,164.93593)"
        id="text50158"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50170);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50170);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106377">Commit</tspan></text>
+         id="tspan107054">Commit</tspan></text>
     <g
        id="g50468"
-       transform="translate(-2.292279,24.814864)">
+       transform="translate(-2.292279,24.814864)"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <ellipse
          style="fill:#ffffff;stroke:#000000;stroke-width:0.274412;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
          id="circle50384"
@@ -1094,98 +1238,128 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-2.4613913,156.21268)"
        id="text50470"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50472);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect50472);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106379">New Issue</tspan></text>
+         id="tspan107056">New Issue</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.1706432,0,0,0.1706432,35.522231,-58.0589)"
        id="text55226"
-       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect55228);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect55228);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106383"><tspan
+         id="tspan107060"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106381">main</tspan></tspan></text>
+           id="tspan107058">main</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.1706432,0,0,0.1706432,35.522231,26.909958)"
        id="text72066"
-       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect72068);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect72068);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106387"><tspan
+         id="tspan107064"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106385">main</tspan></tspan></text>
+           id="tspan107062">main</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.1706432,0,0,0.1706432,35.522231,108.11249)"
        id="text72072"
-       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect72074);fill:#000000;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect72074);fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106391"><tspan
+         id="tspan107068"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106389">main</tspan></tspan></text>
+           id="tspan107066">main</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.1706432,0,0,0.1706432,53.398312,41.513749)"
        id="text72078"
-       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect72080);fill:#3771c8;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect72080);fill:#3771c8;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-simple.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106395"><tspan
+         id="tspan107072"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106393">feature</tspan></tspan></text>
+           id="tspan107070">feature</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.1706432,0,0,0.1706432,53.398312,-44.202274)"
        id="text76784"
-       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect76786);fill:#3771c8;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect76786);fill:#3771c8;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106399"><tspan
+         id="tspan107076"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106397">feature</tspan></tspan></text>
+           id="tspan107074">feature</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.1706432,0,0,0.1706432,88.922654,114.98924)"
        id="text76790"
-       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect76792);fill:#3771c8;fill-opacity:1;stroke:none"><tspan
+       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect76792);fill:#3771c8;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106403"><tspan
+         id="tspan107080"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106401">feature</tspan></tspan></text>
+           id="tspan107078">feature</tspan></tspan></text>
     <path
        style="fill:none;stroke:#3771c8;stroke-width:0.712855;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157-3-8)"
        d="m 118.47014,228.11025 c 15.49706,0.0594 2.37642,-12.72625 22.35116,-13.42219"
        id="path30888-3"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,100.95783,141.17404)"
        id="text31217-1"
        style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect31219-3);fill:#000000;fill-opacity:1;stroke:none"
        x="46.167969"
-       y="0"><tspan
+       y="0"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="143.42188"
          y="267.43359"
-         id="tspan106407"><tspan
+         id="tspan107084"><tspan
            style="text-align:center;text-anchor:middle"
-           id="tspan106405">Merge / Pull 
+           id="tspan107082">Merge / Pull 
 </tspan></tspan><tspan
          x="160.42188"
          y="287.43359"
-         id="tspan106411"><tspan
+         id="tspan107088"><tspan
            style="text-align:center;text-anchor:middle"
-           id="tspan106409">Request</tspan></tspan></text>
+           id="tspan107086">Request</tspan></tspan></text>
     <path
        style="fill:none;stroke:#2c5aa0;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157-3-8)"
        d="m 162.45246,214.85554 c 14.72972,0.083 2.38965,-18.39241 21.4554,-18.51097"
        id="path42052-8"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-branches-issue_mergerequest.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157-2)"
        d="M 10.65889,-85.138461 H 208.99698"
@@ -1204,7 +1378,7 @@
        style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49638-0);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106413">Commit</tspan></text>
+         id="tspan107090">Commit</tspan></text>
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle49626-2"
@@ -1218,7 +1392,7 @@
        style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49644-0);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106415">Commit</tspan></text>
+         id="tspan107092">Commit</tspan></text>
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle49630-0"
@@ -1232,7 +1406,7 @@
        style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect49646-8);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106417">Commit</tspan></text>
+         id="tspan107094">Commit</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157-2)"
        d="M 10.65889,-131.66651 H 208.99698"
@@ -1249,9 +1423,9 @@
        style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect82264);fill:#2ca089;fill-opacity:1;stroke:none"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106421"><tspan
+         id="tspan107098"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106419">push</tspan></tspan></text>
+           id="tspan107096">push</tspan></tspan></text>
     <path
        style="fill:#aaccff;stroke:none;stroke-width:0.12175px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m -12.261969,-128.43498 c 0.809417,0 1.618831,0 2.4282474,0 0.964698,0 1.891826,0.15308 2.851943,0.19688 0.654901,0.0299 1.311166,0 1.966749,0 0.393244,0 0.786489,0 1.179733,0 0.426147,0 0.852293,0 1.27844,0 1.3145182,0 2.61277206,-0.0987 3.9334948,-0.0987 0.398407,0 1.307567,0.18207 1.6716836,0 1.3188496,-0.65942 3.3083488,-1.08773 4.4249218,-2.06492 0.5255286,-0.45992 0.5901291,-1.13027 0.5901291,-1.76986 0,-0.27555 0.031754,-0.52663 -0.098179,-0.78649 -0.4451228,-0.89025 -1.7732948,-1.59772 -2.7537622,-1.47533 -0.4220445,0.0527 -0.5560983,0.22918 -0.88467,0.39325 -0.075869,0.0379 -0.5806441,0.14726 -0.59013,0.29506 -1.214e-4,0.002 0.149841,-0.0528 0.1900599,-0.57647 0.059628,-0.77648 0.1144787,-1.01828 -0.4914238,-1.57351 -1.0909456,-0.99971 -3.19114994,-0.98337 -4.5236271,-0.98337 -0.5631071,0 -1.2141461,-0.0325 -1.7698631,0.0982 -0.156251,0.0367 -2.348703,0.97454 -1.973574,1.18026 0.368791,0.20225 0.401193,-0.75207 0.382219,-0.88519 -0.15393,-1.07998 -1.189871,-1.72328 -2.163108,-1.96675 -1.086234,-0.27174 -2.411179,-0.17431 -3.343367,0.49196 -0.4175894,0.29845 -0.5486804,0.81295 -0.3932454,1.27843 0.02012,0.0603 0.294541,0.62773 0.294541,0.30871 0,-1.18026 -2.603625,-1.91682 -3.539727,-1.56562 -0.633658,0.23773 -1.503733,1.21217 -1.180259,1.96675 0.100588,0.23464 0.468248,0.62136 0.688309,0.78648 0.0632,0.0474 0.560705,0.21204 0.49195,0.28037 -0.157615,0.15663 -1.957189,0.005 -2.443997,0.49195 -1.166172,1.16617 0.02928,2.97395 0.983372,3.73661 0.317646,0.25391 0.46429,0.49142 0.882571,0.49142 0.04918,0 -0.09835,0 -0.147533,0 -0.182527,0 -0.41631,-0.0435 -0.589604,0 -0.362367,0.091 -0.56121,0.61801 -0.295064,0.88415 0.887585,0.88759 1.848113,0.53244 2.94277,0.86577 z"
@@ -1899,9 +2073,9 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect84930);fill:#666666;fill-opacity:1;stroke:none"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106425"><tspan
+         id="tspan107102"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106423">clone</tspan></tspan></text>
+           id="tspan107100">clone</tspan></tspan></text>
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle89602"
@@ -1915,7 +2089,7 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect89608);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106427">Commit</tspan></text>
+         id="tspan107104">Commit</tspan></text>
     <path
        style="fill:#808080;stroke:#2ca089;stroke-width:0.868286;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.868286, 1.73657;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
        d="m 115.03705,-170.9484 v 35.66049"
@@ -1927,9 +2101,9 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect89616);fill:#2ca089;fill-opacity:1;stroke:none"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106431"><tspan
+         id="tspan107108"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106429">push</tspan></tspan></text>
+           id="tspan107106">push</tspan></tspan></text>
     <path
        style="fill:#892ca0;stroke:#892ca0;stroke-width:0.868286;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.868286, 1.73657;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
        d="m 137.64075,-126.68868 v 35.660491"
@@ -1941,9 +2115,9 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect89624);fill:#892ca0;fill-opacity:1;stroke:none"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106435"><tspan
+         id="tspan107112"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106433">pull</tspan></tspan></text>
+           id="tspan107110">pull</tspan></tspan></text>
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle89626"
@@ -1957,7 +2131,7 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect89632);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106437">Commit</tspan></text>
+         id="tspan107114">Commit</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157-2)"
        d="M 10.65889,-228.6848 H 208.99698"
@@ -1985,7 +2159,7 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106439">Commit</tspan></text>
+         id="tspan107116">Commit</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157-2)"
        d="M 10.65889,-275.21285 H 208.99698"
@@ -2011,9 +2185,9 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        inkscape:export-ydpi="300"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106443"><tspan
+         id="tspan107120"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106441">push</tspan></tspan></text>
+           id="tspan107118">push</tspan></tspan></text>
     <path
        style="fill:#aaccff;stroke:none;stroke-width:0.12175px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m -12.261969,-271.98132 c 0.809417,0 1.618831,0 2.4282474,0 0.964698,0 1.891826,0.15308 2.851943,0.19688 0.654901,0.0299 1.311166,0 1.966749,0 0.393244,0 0.786489,0 1.179733,0 0.426147,0 0.852293,0 1.27844,0 1.3145182,0 2.61277206,-0.0987 3.9334948,-0.0987 0.398407,0 1.307567,0.18207 1.6716836,0 1.3188496,-0.65942 3.3083488,-1.08773 4.4249218,-2.06492 0.5255286,-0.45992 0.5901291,-1.13027 0.5901291,-1.76986 0,-0.27555 0.031754,-0.52663 -0.098179,-0.78649 -0.4451228,-0.89025 -1.7732948,-1.59772 -2.7537622,-1.47533 -0.4220445,0.0527 -0.5560983,0.22918 -0.88467,0.39325 -0.075869,0.0379 -0.5806441,0.14726 -0.59013,0.29506 -1.214e-4,0.002 0.149841,-0.0528 0.1900599,-0.57647 0.059628,-0.77648 0.1144787,-1.01828 -0.4914238,-1.57351 -1.0909456,-0.99971 -3.19114994,-0.98337 -4.5236271,-0.98337 -0.5631071,0 -1.2141461,-0.0325 -1.7698631,0.0982 -0.156251,0.0367 -2.348703,0.97454 -1.973574,1.18026 0.368791,0.20225 0.401193,-0.75207 0.382219,-0.88519 -0.15393,-1.07998 -1.189871,-1.72328 -2.163108,-1.96675 -1.086234,-0.27174 -2.411179,-0.17431 -3.343367,0.49196 -0.4175894,0.29845 -0.5486804,0.81295 -0.3932454,1.27843 0.02012,0.0603 0.294541,0.62773 0.294541,0.30871 0,-1.18026 -2.603625,-1.91682 -3.539727,-1.56562 -0.633658,0.23773 -1.503733,1.21217 -1.180259,1.96675 0.100588,0.23464 0.468248,0.62136 0.688309,0.78648 0.0632,0.0474 0.560705,0.21204 0.49195,0.28037 -0.157615,0.15663 -1.957189,0.005 -2.443997,0.49195 -1.166172,1.16617 0.02928,2.97395 0.983372,3.73661 0.317646,0.25391 0.46429,0.49142 0.882571,0.49142 0.04918,0 -0.09835,0 -0.147533,0 -0.182527,0 -0.41631,-0.0435 -0.589604,0 -0.362367,0.091 -0.56121,0.61801 -0.295064,0.88415 0.887585,0.88759 1.848113,0.53244 2.94277,0.86577 z"
@@ -2040,7 +2214,7 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106445">Commit</tspan></text>
+         id="tspan107122">Commit</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -2048,9 +2222,9 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect92020);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="-188.32227"
          y="-213.54492"
-         id="tspan106449"><tspan
+         id="tspan107126"><tspan
            dx="0 27.363281 11.113281 11.113281 21.992188"
-           id="tspan106447">Alice</tspan></tspan></text>
+           id="tspan107124">Alice</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.14528042,0,0,0.14528042,12.741647,-35.538994)"
@@ -2058,9 +2232,9 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect95194);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="-206.30078"
          y="-328.27777"
-         id="tspan106453"><tspan
+         id="tspan107130"><tspan
            style="font-family:Roboto;-inkscape-font-specification:Roboto"
-           id="tspan106451">Alice</tspan></tspan></text>
+           id="tspan107128">Alice</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.14528042,0,0,0.14528042,12.741647,-125.87305)"
@@ -2068,9 +2242,9 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect97198);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="-206.30078"
          y="-328.27777"
-         id="tspan106457"><tspan
+         id="tspan107134"><tspan
            style="font-family:Roboto;-inkscape-font-specification:Roboto"
-           id="tspan106455">Bob</tspan></tspan></text>
+           id="tspan107132">Bob</tspan></tspan></text>
     <g
        id="g97662"
        inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-1.png"
@@ -2403,9 +2577,9 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect97650);fill:#000000;fill-opacity:1;stroke:none"><tspan
            x="-206.30078"
            y="-328.27777"
-           id="tspan106461"><tspan
+           id="tspan107138"><tspan
              style="font-family:Roboto;-inkscape-font-specification:Roboto"
-             id="tspan106459">Alice</tspan></tspan></text>
+             id="tspan107136">Alice</tspan></tspan></text>
     </g>
     <path
        style="fill:#808080;stroke:#2ca089;stroke-width:0.868286;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.868286, 1.73657;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
@@ -2424,9 +2598,9 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        inkscape:export-ydpi="300"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106465"><tspan
+         id="tspan107142"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106463">push</tspan></tspan></text>
+           id="tspan107140">push</tspan></tspan></text>
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle97832"
@@ -2446,13 +2620,13 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106467">Commit</tspan></text>
+         id="tspan107144">Commit</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157-2)"
        d="M 10.65889,-331.43366 H 208.99698"
        id="path104621"
        sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <circle
@@ -2461,7 +2635,7 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        cx="34.446934"
        cy="-331.25699"
        r="2.6260836"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <text
@@ -2469,24 +2643,24 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        transform="matrix(0.26458333,0,0,0.26458333,-11.176736,-406.26213)"
        id="text104627"
        style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect104689);fill:#000000;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106469">Commit</tspan></text>
+         id="tspan107146">Commit</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1157-2)"
        d="M 10.65889,-377.96171 H 208.99698"
        id="path104629"
        sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <g
        id="g104872"
        transform="translate(67.655269)"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300">
       <path
@@ -2501,15 +2675,15 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
          style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect104691);fill:#2ca089;fill-opacity:1;stroke:none"><tspan
            x="-186.27539"
            y="547.70616"
-           id="tspan106473"><tspan
+           id="tspan107150"><tspan
              style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-             id="tspan106471">push</tspan></tspan></text>
+             id="tspan107148">push</tspan></tspan></text>
     </g>
     <path
        style="fill:#aaccff;stroke:none;stroke-width:0.12175px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m -12.261969,-374.73018 c 0.809417,0 1.618831,0 2.4282474,0 0.964698,0 1.891826,0.15308 2.851943,0.19688 0.654901,0.0299 1.311166,0 1.966749,0 0.393244,0 0.786489,0 1.179733,0 0.426147,0 0.852293,0 1.27844,0 1.3145182,0 2.61277206,-0.0987 3.9334948,-0.0987 0.398407,0 1.307567,0.18207 1.6716836,0 1.3188496,-0.65942 3.3083488,-1.08773 4.4249218,-2.06492 0.5255286,-0.45992 0.5901291,-1.13027 0.5901291,-1.76986 0,-0.27555 0.031754,-0.52663 -0.098179,-0.78649 -0.4451228,-0.89025 -1.7732948,-1.59772 -2.7537622,-1.47533 -0.4220445,0.0527 -0.5560983,0.22918 -0.88467,0.39325 -0.075869,0.0379 -0.5806441,0.14726 -0.59013,0.29506 -1.214e-4,0.002 0.149841,-0.0528 0.1900599,-0.57647 0.059628,-0.77648 0.1144787,-1.01828 -0.4914238,-1.57351 -1.0909456,-0.99971 -3.19114994,-0.98337 -4.5236271,-0.98337 -0.5631071,0 -1.2141461,-0.0325 -1.7698631,0.0982 -0.156251,0.0367 -2.348703,0.97454 -1.973574,1.18026 0.368791,0.20225 0.401193,-0.75207 0.382219,-0.88519 -0.15393,-1.07998 -1.189871,-1.72328 -2.163108,-1.96675 -1.086234,-0.27174 -2.411179,-0.17431 -3.343367,0.49196 -0.4175894,0.29845 -0.5486804,0.81295 -0.3932454,1.27843 0.02012,0.0603 0.294541,0.62773 0.294541,0.30871 0,-1.18026 -2.603625,-1.91682 -3.539727,-1.56562 -0.633658,0.23773 -1.503733,1.21217 -1.180259,1.96675 0.100588,0.23464 0.468248,0.62136 0.688309,0.78648 0.0632,0.0474 0.560705,0.21204 0.49195,0.28037 -0.157615,0.15663 -1.957189,0.005 -2.443997,0.49195 -1.166172,1.16617 0.02928,2.97395 0.983372,3.73661 0.317646,0.25391 0.46429,0.49142 0.882571,0.49142 0.04918,0 -0.09835,0 -0.147533,0 -0.182527,0 -0.41631,-0.0435 -0.589604,0 -0.362367,0.091 -0.56121,0.61801 -0.295064,0.88415 0.887585,0.88759 1.848113,0.53244 2.94277,0.86577 z"
        id="path104637"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
@@ -2517,7 +2691,7 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        d="M 10.65889,-419.90072 H 208.99698"
        id="path104639"
        sodipodi:nodetypes="cc"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <image
@@ -2827,7 +3001,7 @@ u7WVwWgOTBgMBg9MGAwGD/8fKXd43lgZ2BsAAAAASUVORK5CYII=
        id="image104641"
        x="-5.9929519"
        y="-435.58942"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <image
@@ -3150,14 +3324,14 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        id="image104643"
        x="-3.4805453"
        y="-342.07333"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
        style="fill:#808080;stroke:#666666;stroke-width:0.868286;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.868286, 1.73657;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
        d="m 63.390801,-380.5591 v -35.6605"
        id="path104645"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <text
@@ -3165,21 +3339,21 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        transform="matrix(0.1706432,0,0,0.1706432,97.922561,-489.14107)"
        id="text104649"
        style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect104693);fill:#666666;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106477"><tspan
+         id="tspan107154"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106475">clone</tspan></tspan></text>
+           id="tspan107152">clone</tspan></tspan></text>
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle104651"
        cx="86.443024"
        cy="-419.89517"
        r="2.6260836"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <text
@@ -3187,17 +3361,17 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        transform="matrix(0.26458333,0,0,0.26458333,40.819354,-494.90033)"
        id="text104655"
        style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect104695);fill:#000000;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106479">Commit</tspan></text>
+         id="tspan107156">Commit</tspan></text>
     <path
        style="fill:#808080;stroke:#2ca089;stroke-width:0.868286;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.868286, 1.73657;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
        d="m 105.69596,-417.03024 v 35.66049"
        id="path104657"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <text
@@ -3205,19 +3379,19 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        transform="matrix(0.1706432,0,0,0.1706432,140.32427,-487.59392)"
        id="text104661"
        style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect104697);fill:#2ca089;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106483"><tspan
+         id="tspan107160"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106481">push</tspan></tspan></text>
+           id="tspan107158">push</tspan></tspan></text>
     <path
        style="fill:#892ca0;stroke:#892ca0;stroke-width:0.868286;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.868286, 1.73657;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
        d="m 139.68536,-372.98388 v 35.66049"
        id="path104663"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <text
@@ -3225,21 +3399,21 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        transform="matrix(0.1706432,0,0,0.1706432,174.42363,-445.13236)"
        id="text104667"
        style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect104699);fill:#892ca0;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          x="-186.27539"
          y="547.70616"
-         id="tspan106487"><tspan
+         id="tspan107164"><tspan
            style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-           id="tspan106485">pull</tspan></tspan></text>
+           id="tspan107162">pull</tspan></tspan></text>
     <circle
        style="fill:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="circle104669"
        cx="93.964272"
        cy="-331.25699"
        r="2.6260836"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <text
@@ -3247,44 +3421,44 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
        transform="matrix(0.26458333,0,0,0.26458333,48.3406,-406.26213)"
        id="text104673"
        style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect104701);fill:#000000;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          x="140.53125"
          y="267.43359"
-         id="tspan106489">Commit</tspan></text>
+         id="tspan107166">Commit</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.14528042,0,0,0.14528042,12.741647,-281.8342)"
        id="text104677"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect104703);fill:#000000;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          x="-206.30078"
          y="-328.27777"
-         id="tspan106493"><tspan
+         id="tspan107170"><tspan
            style="font-family:Roboto;-inkscape-font-specification:Roboto"
-           id="tspan106491">Alice</tspan></tspan></text>
+           id="tspan107168">Alice</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.14528042,0,0,0.14528042,12.741647,-372.16825)"
        id="text104681"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect104705);fill:#000000;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          x="-206.30078"
          y="-328.27777"
-         id="tspan106497"><tspan
+         id="tspan107174"><tspan
            style="font-family:Roboto;-inkscape-font-specification:Roboto"
-           id="tspan106495">Bob</tspan></tspan></text>
+           id="tspan107172">Bob</tspan></tspan></text>
     <g
        aria-label="x"
        transform="matrix(0.40083023,-0.01502188,0.01789323,0.33650842,41.934672,-278.40619)"
        id="text98794"
        style="font-size:40px;line-height:1.25;white-space:pre;shape-inside:url(#rect98796);fill:#d40000"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300">
       <path
@@ -3295,7 +3469,7 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
     <g
        id="g105992"
        transform="translate(119.1491)"
-       inkscape:export-filename="/home/fritjof/my-projects/docker-training/docker-fundamentals/images/git-collab-simple-2.png"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300">
       <path
@@ -3310,10 +3484,30 @@ TBgMBgUmDAaDwv8D11qvyjhQxaIAAAAASUVORK5CYII=
          style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect105994);fill:#2ca089;fill-opacity:1;stroke:none"><tspan
            x="-186.27539"
            y="547.70616"
-           id="tspan106501"><tspan
+           id="tspan107178"><tspan
              style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
-             id="tspan106499">push</tspan></tspan></text>
+             id="tspan107176">push</tspan></tspan></text>
     </g>
+    <path
+       style="fill:#808080;stroke:#2ca089;stroke-width:0.868286;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.868286, 1.73657;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="m 47.523407,-337.27014 v -35.66049"
+       id="path106503"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.1706432,0,0,0.1706432,82.135018,-445.50187)"
+       id="text106507"
+       style="font-style:normal;font-weight:normal;font-size:26.8754px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect106509);fill:#2ca089;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/fritjof/my-projects/docker-training/learning-git/images/git-collab-simple-2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         x="-186.27539"
+         y="547.70616"
+         id="tspan107182"><tspan
+           style="font-weight:bold;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS Bold'"
+           id="tspan107180">push</tspan></tspan></text>
   </g>
   <style
      type="text/css"

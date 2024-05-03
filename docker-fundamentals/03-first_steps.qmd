@@ -5,10 +5,10 @@ Duration: 1.5 hours
 ::: {.callout-tip}
 ## Learning objectives
 
-- Be able check if Docker is installed on your machine
-- Run and interact Docker containers
-- Understand some important Docker commands and how to get help with the Docker CLI (Command Line Interface) 
-- Finding new containers on Docker Hub
+- You will be able check if Docker is installed on your machine
+- You can run and interact Docker containers
+- You know some important Docker commands and how to get help with the Docker CLI (Command Line Interface) 
+- You have learned about the registry Docker Hub, and how to find and run containers from there. 
 :::
 
 

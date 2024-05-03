@@ -7,8 +7,8 @@ Duration: 25 - 40 minutes
 
 - Learn what a computing environment is.
 - Understand why stable computing environments are important for reproducible research.
-- Know about use cases for container
-- Get an overview of Docker and it's functionality
+- Know about use cases for containers.
+- Get an overview of Docker and it's functionality.
 
 :::
 

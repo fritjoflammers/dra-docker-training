@@ -2,6 +2,12 @@
 
 Here we can collect practical tips for working with Docker. 
 
+## Resources 
+
+- [Docker CLI cheat sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
+- [Docker Docs](https://docs.docker.com/get-started/resources/)
+
+
 ## Practical tips
 
 ### Mounting volumes

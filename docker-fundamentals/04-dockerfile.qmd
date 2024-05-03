@@ -5,10 +5,10 @@ Duration: 40 min
 ::: {.callout-tip}
 ## Learning objectives
 
-- Understand what a Dockerfile is and how it works. 
-- Create a Dockerfile for a simple application. 
-- Build an image from a Dockerfile.
-- Know how to correclty name and tag an image. 
+- You know what a Dockerfile is and understand how it used to build an image.
+- You will be able to create a Dockerfile to containerize an application.
+- You can build an image from a Dockerfile and publish it to a registry.
+- You know how to correclty name and tag an image. 
 
 :::
 
@@ -79,12 +79,17 @@ For the `ENTRYPOINT`, we will start the container with the Python script `plot.p
 
 ```Dockerfile
 # Dockerfile
-FROM alpine
+FROM alpine:3.12
 
 RUN apk add --update python3 py3-pip py3-matplotlib py3-numpy py3-pandas
 
 ENTRYPOINT ["python3", "plot.py"]
 ```
+
+The `RUN` command is used to execute a command when building the image. It is typically used to install software packages.
+
+In this example, we use the package manager `apk` that is part of alpine linux, to install Python3, pip, and the required Python libraries.
+
 What happens when you build this image and run the container?
 
 Probably you will get an error message that the file `plot.py` is not found.
@@ -101,7 +106,7 @@ Let's do that now:
 
 ```Dockerfile
 # Dockerfile
-FROM alpine
+FROM alpine:3.12
 
 RUN apk add --update python3 py3-pip py3-matplotlib py3-numpy py3-pandas
 
@@ -113,13 +118,40 @@ ENTRYPOINT ["python3", "plot.py"]
 ```
 
 
-
 Let's look at the two new commands: 
 
 - `WORKDIR` sets the working directory for all subsequent commands. This is similar to the `cd` command in a shell.
 - `COPY` copies files from the host to the image. The first argument is the source file on the host, the second argument is the destination in the image.
 
 Now, build the image and run the container.
+
+## ENTRYPOINT vs CMD
+
+Both, `ENTRYPOINT` and `CMD` specify what commands are executed when the container starts.
+
+However, `ENTRYPOINT` is *always* executed. The command defined here is not optional. 
+
+In contrast, `CMD` is optional. If a command is specified when running the container, it will override the `CMD` command.
+
+So for example, if a Dockerfile ends with the following line:
+
+```Dockerfile
+CMD ["python3", "plot.py"]
+```
+
+You can run the container with a different command like this:
+
+```bash
+docker run my-python-plot:0.1 python3 plot.py --help
+``` 
+
+You can also combine `ENTRYPOINT` and `CMD`:
+
+```Dockerfile
+ENTRYPOINT ["python3"]
+CMD ["plot.py"]
+```
+
 
 ## Binding host directories to a container
 
@@ -148,8 +180,35 @@ When building an image, Docker uses a layered file system. Each command in the D
 
 When you build an image, Docker caches the layers. If you change a command in the Dockerfile, Docker will only rebuild the layers that are affected by the change.
 
+Consider this example:
+
+```Dockerfile
+# Dockerfile
+FROM alpine:3.12
+
+RUN apk add --update python3 py3-pip py3-matplotlib py3-numpy py3-pandas
+
+WORKDIR /app
+
+COPY annual-temp-anomalies.csv plot.py /app
+
+ENTRYPOINT ["python3", "plot.py"]
+```
+
+When you build this image, Docker will create the following layers:
+
+1. The base image `alpine:3.12`
+2. The installed packages
+3. The working directory
+4. The copied files
+
+If you change the `COPY` command, Docker will only rebuild the last two layers.
+
+
 
 ## Publishing an image
+
+
 
 ### Docker Hub
 
