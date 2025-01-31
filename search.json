@@ -24,7 +24,7 @@
     "href": "working-with-the-shell/01-shell_basics.html",
     "title": "2  Shell basics",
     "section": "",
-    "text": "2.1 What is the Shell?\nThis session consists of some slides that are available here.",
+    "text": "2.1 What is the Shell?\nDuration: 75 minutes\nThis session consists of some slides that are available here.",
     "crumbs": [
       "Working with the Shell",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Shell basics</span>"
@@ -255,7 +255,7 @@
     "href": "01-introduction.html",
     "title": "6  Stable Computing Environments",
     "section": "",
-    "text": "6.1 Opening demo\nCreate a Python script called plot.py with the following content:\nTry running the script by executing\nDoes it work?\nLikely, you will get an error message that matplotlib is not installed. Possibly also Python is not installed on your system, showing error message like: python: command not found.\nWhen you have Docker installed, you can run the script in a Docker container with the following command:",
+    "text": "6.1 Opening demo\nDuration: 25 - 40 minutes\nCreate a Python script called plot.py with the following content:\nTry running the script by executing\nDoes it work?\nLikely, you will get an error message that matplotlib is not installed. Possibly also Python is not installed on your system, showing error message like: python: command not found.\nWhen you have Docker installed, you can run the script in a Docker container with the following command:",
     "crumbs": [
       "Docker Fundamentals",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Stable Computing Environments</span>"
@@ -310,7 +310,7 @@
     "href": "03-first_steps.html",
     "title": "7  First steps with Docker",
     "section": "",
-    "text": "7.1 Install Docker\nSee Installation Instructions.",
+    "text": "7.1 Install Docker\nDuration: 1.5 hours\nSee Installation Instructions.",
     "crumbs": [
       "Docker Fundamentals",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>First steps with Docker</span>"
@@ -398,7 +398,7 @@
     "href": "04-dockerfile.html",
     "title": "8  Creating a Dockerfile",
     "section": "",
-    "text": "8.1 Introduction\nResearch projects typically require a lot of specific software that is not available in predefined Docker image. In this session, we will create a first own Dockerfile to build a custom image.\nDo you remember the Docker workflow?\nIn order to build an image, we need to create a Dockerfile.",
+    "text": "8.1 Introduction\nDuration: 40 min\nResearch projects typically require a lot of specific software that is not available in predefined Docker image. In this session, we will create a first own Dockerfile to build a custom image.\nDo you remember the Docker workflow?\nIn order to build an image, we need to create a Dockerfile.",
     "crumbs": [
       "Docker Fundamentals",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Creating a Dockerfile</span>"
@@ -486,7 +486,7 @@
     "href": "05-advanced_docker.html",
     "title": "9  Advanced docker",
     "section": "",
-    "text": "9.1 Multi-container application (docker-compose)",
+    "text": "9.1 Multi-container application (docker-compose)\nThese are some additional topics that are not covered in the basic docker course.\nSee following topics are placeholders.",
     "crumbs": [
       "Docker Fundamentals",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Advanced docker</span>"
@@ -519,7 +519,7 @@
     "href": "06-code_clinic.html",
     "title": "10  Code clinic",
     "section": "",
-    "text": "10.1 Resources",
+    "text": "10.1 Resources\nHere we can collect practical tips for working with Docker.",
     "crumbs": [
       "Docker Fundamentals",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Code clinic</span>"
